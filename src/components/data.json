@@ -1,0 +1,33 @@
+{
+  "resources": [
+    {
+      "id": 1,
+      "title": "Find me on Mastodon",
+      "imageUrl": "/src/assets/logos/CITS Main Horizontal 3.svg"
+    },{
+      "id": 2,
+      "title": "Find me on Mastodon",
+      "imageUrl": "/src/assets/logos/FOF Bamenda.svg"
+    },{
+      "id": 3,
+      "title": "Find me on Mastodon",
+      "imageUrl": "/src/assets/logos/GDG Bambili.svg"
+    },{
+      "id": 4,
+      "title": "Find me on Mastodon",
+      "imageUrl": "/src/assets/logos/GDG Bda.svg"
+    },{
+      "id": 5,
+      "title": "Find me on Mastodon",
+      "imageUrl": "/src/assets/logos/GDSC Uba.svg"
+    },{
+      "id": 6,
+      "title": "Find me on Mastodon",
+      "imageUrl": "/src/assets/logos/Mavia.svg"
+    },{
+      "id": 7,
+      "title": "Find me on Mastodon",
+      "imageUrl": "/src/assets/logos/MLSA.svg"
+    }
+  ]
+}

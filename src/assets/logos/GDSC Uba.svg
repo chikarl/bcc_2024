@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.23 36.05">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text transform="translate(77 27.84)" style="fill: #676c72; font-family: GoogleSansDisplay-Regular, &apos;Google Sans Display&apos;; font-size: 32.45px;"><tspan x="0" y="0" style="letter-spacing: 0em;">GDSC</tspan><tspan x="89.85" y="0" style="letter-spacing: -.03em;"> </tspan><tspan x="96.41" y="0" style="letter-spacing: 0em;">UBa</tspan></text>
+      <g>
+        <path d="M15.25,16.58l10.4-6.01c2.45-1.41,3.29-4.54,1.87-6.99-1.41-2.45-4.54-3.29-6.99-1.87L2.56,12.09l12.69,4.49Z" style="fill: #f05b44;"/>
+        <path d="M23.09,32.02c1.77,0,3.49-.92,4.44-2.56,1.41-2.45,.57-5.58-1.87-6.99L7.68,12.09c-2.45-1.41-5.58-.57-6.99,1.87-1.41,2.45-.57,5.58,1.87,6.99l17.97,10.38c.81,.47,1.69,.69,2.55,.69Z" style="fill: #5199f6;"/>
+        <path d="M40.97,32.02c.87,0,1.75-.22,2.55-.69l17.97-10.38-12.53-4.59-10.56,6.1c-2.45,1.41-3.29,4.54-1.87,6.99,.95,1.64,2.67,2.56,4.44,2.56Z" style="fill: #fcc500;"/>
+        <path d="M58.93,21.64c1.77,0,3.49-.92,4.44-2.56,1.41-2.45,.57-5.58-1.87-6.99L43.52,1.71c-2.45-1.41-5.58-.57-6.99,1.87-1.41,2.45-.57,5.58,1.87,6.99l17.97,10.38c.81,.47,1.69,.69,2.55,.69Z" style="fill: #089d57;"/>
+      </g>
+    </g>
+  </g>
+</svg>
