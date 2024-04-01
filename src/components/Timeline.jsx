@@ -30,12 +30,12 @@ height: 814px;
 .timeline{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   height: 100%;
 }
 .timeline h4{
   font-size: 32px;
-  padding-bottom:86px ;
+  padding: 160px 0 50px 0 ;
 }
 .timeline h1{
   font-family: 'Product Sans Light';
@@ -44,7 +44,7 @@ height: 814px;
 .timeline h2{
   font-size: 36px;
 }
-.timeline h2,.timeline h4{
+.timeline h2, .timeline h4{
   font-family: 'Product Sans';
 
 }
