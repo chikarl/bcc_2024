@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 // Data
-import data from "./data.json";
+import data from "../assets/data.json";
 
 const Carousel = () => {
 
