@@ -4,6 +4,7 @@ import bg_img from '../assets/img/bg_img.svg'
 function Timeline() {
   return (
     <Wrapper>
+      <div className='bg-img'>
       <div className='container timeline'>
         <h4>Time line</h4>
 
@@ -11,6 +12,7 @@ function Timeline() {
 
         <h2>March1</h2>
 
+      </div>
       </div>
     </Wrapper>
   )
@@ -20,8 +22,8 @@ const Wrapper = styled.div`
   font-family: 'Product Sans Light';
   src: url(./assets/fonts/ProductSans-Light.ttf);
 }
-background-image: url(${bg_img});
 background-color: black;
+background-image: url(${bg_img});
 color: white;
 background-size: contain;
 background-repeat: no-repeat;
