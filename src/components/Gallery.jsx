@@ -39,7 +39,7 @@ function Gallery() {
               <img src={img5} alt='' />
             </div>
           </div>
-          <div>
+          <div className='grid_1'>
             <img src={img7} alt='' />
           </div>
           <div className='grid_2_rev'>
@@ -147,11 +147,10 @@ img{
 img {
   width: 100%;
   /* border-radius: 32px; */
-  /* padding: 0 5px; */
 
 }
 
-.grid_2 img, .grid_2_rev img, .grid_3 img {
+.grid_2 img, .grid_2_rev img, .grid_3 img, .grid_1 img{
   padding: 0 5px;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import bg_img from '../assets/img/bg_img.svg'
+import bg_img from '../assets/img/bg_img.png'
 function Timeline() {
   return (
     <Wrapper>
