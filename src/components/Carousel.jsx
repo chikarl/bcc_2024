@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 // Data
-import data from "../assets/data.json";
+import { resources } from "../utils/data";
 
 const Carousel = () => {
 
@@ -10,12 +10,13 @@ const Carousel = () => {
     <Wrapper>
       <div>
         <div className="carrousel">
-            {data.resources.map((resource, index) => {
+            {resources.map((resource, index) => {
+              {{console.log(resource)}}
             return (
               <div
                 key={index} className="card" >
                   <img
-                    src={resource.imageUrl || ''}
+                    src={resource.image || ''}
                     alt={resource.title}
                     className="w-full aspect-square hidden"
                   />

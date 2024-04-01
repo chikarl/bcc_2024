@@ -20,9 +20,9 @@ const Wrapper = styled.div`
   font-family: 'Product Sans Light';
   src: url(./assets/fonts/ProductSans-Light.ttf);
 }
+background-image: url(${bg_img});
 background-color: black;
 color: white;
-background-image: url(${bg_img});
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
