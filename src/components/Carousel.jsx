@@ -11,7 +11,7 @@ const Carousel = () => {
       <div>
         <div className="carrousel">
             {resources.map((resource, index) => {
-              {{console.log(resource)}}
+              // {{console.log(resource)}}
             return (
               <div
                 key={index} className="card" >

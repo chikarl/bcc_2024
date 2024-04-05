@@ -41,10 +41,10 @@ const Wrapper = styled.div`
   a{
     color: black;
   }
-  @media screen and (max-width: 1280px) {
+  @media screen and (min-width: 1281px) {
   /* insert styles here */
   .carousel-div{
-    margin-left: calc((100% - 1256px) / 2) ;
+    margin-left: calc((100% - 1256px) / 2) !important;
   }
 }
 `;

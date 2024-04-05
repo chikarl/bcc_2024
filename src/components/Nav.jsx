@@ -16,6 +16,7 @@ function nav() {
         <ul>
           <li><a href="#">TImeline</a></li>
           <li><a href="#">Prizes</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </div>
       </div>

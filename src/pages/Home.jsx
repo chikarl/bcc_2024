@@ -5,18 +5,26 @@ import Register from '../components/Register'
 import Timeline from '../components/Timeline'
 import Gallery from '../components/Gallery'
 import Partners from '../components/Partners'
+import BlogSection from '../components/BlogSection'
+import Steps from '../components/Steps'
 import Carousel from '../components/Carousel'
+import HeaderCarousel from '../components/HeaderCarousel'
+import FooterSection from '../components/FooterSection'
+import FaqSection from '../components/FaqSection'
 function Home() {
   return (
     <div>
       {/* <h2>Home page</h2> */}
       <Header />
-      <Header_img />
+      <HeaderCarousel />
+      {/* <Header_img /> */}
       <Register />
-      <Timeline />
-      {/* <Carousel /> */}
-      <Partners />
+      {/* <Timeline /> */}
+      <Steps />
+      <BlogSection />
       <Gallery />
+      <FaqSection />
+      <FooterSection />
     </div>
   )
 }

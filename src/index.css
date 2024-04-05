@@ -20,8 +20,8 @@
 }
 body{
 font-family: 'Product Sans', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #fff;
+  color: #000;
   font-size: 1rem;
   line-height: 1.5;
 
@@ -49,10 +49,20 @@ a{
   display: flex;
   flex-direction: row;
 }
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
 h2{
   font-size: 2rem;
 }
-
+    button.btn-arrow {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      border-radius: 36px;
+      padding: 8px 28px;
+    }
 
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

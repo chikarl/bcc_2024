@@ -28,6 +28,7 @@ const Wrapper = styled.div`
 width: 100%;
 background-color: #4C25EF;
 color: white;
+/* height: 100vh; */
 .hero{
   /* width: 1260px; */
   /* margin: 0 auto; */
@@ -53,6 +54,8 @@ p{
   height: auto;
   margin: 0;
   padding: 0;
+  object-fit: cover;
+  object-position: center;
 }
 `
 export default header
