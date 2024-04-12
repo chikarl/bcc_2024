@@ -1,8 +1,33 @@
 import React, { useState, useEffect } from "react";
 // import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 // import { FaQuoteRight } from 'react-icons/fa';
-import styled from "styled-components";
 import { timeline } from "../utils/helper";
+
+
+import styled, { keyframes } from 'styled-components';
+
+// Keyframes for the slide-in effect
+const slideIn = keyframes`
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+`;
+
+// Keyframes for the slide-out effect
+const slideOut = keyframes`
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+`;
+
+
+
 
 function App() {
   const [people, setPeople] = useState(timeline);
@@ -18,19 +43,19 @@ function App() {
     }
   }, [index, people]);
 
-  // useEffect(() => {
-  //   let slider = setInterval(() => {
-  //     setIndex(index + 1);
-  //   }, 10000);
-  //   return () => {
-  //     clearInterval(slider);
-  //   };
-  // }, [index]);
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 10000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
 
   return (
     <>
       <Wrapper className="section">
-        <div className="section-center container">
+        <div className="container">
           {people.map((person, personIndex) => {
             const { id, title, data, arrow, color, bg_color, bg_image } =
               person;
@@ -39,6 +64,9 @@ function App() {
         backgroundColor: bg_color, // Camel cased CSS property
         // backgroundImage: `url(${bg_image})`,
       };
+        const divColor = {
+          borderColor: color
+        }
             let position = "nextSlide";
             if (personIndex === index) {
               position = "activeSlide";
@@ -74,7 +102,7 @@ function App() {
                     <div style={{zIndex: 100}}>
                       <button
                         className="btn-arrow"
-                        onClick={() => setIndex(index + 1)}>
+                        onClick={() => setIndex(index + 1)} style={divColor}>
                         <img src={arrow} alt="" />
                       </button>
                     </div>
@@ -107,6 +135,7 @@ const Wrapper = styled.div`
     }
     .btn-arrow{
       z-index: 100px;
+      cursor: pointer;
     }
   article {
     position: absolute;
@@ -121,10 +150,14 @@ const Wrapper = styled.div`
   article.activeSlide {
     opacity: 1;
     transform: translateX(0);
+    animation: ${slideIn} 1s ease-in-out forwards; // Use the animation
   }
+
   article.lastSlide {
-    transform: translateX(-100%);
+    opacity: 1;
+    animation: ${slideOut} 1s ease-in-out forwards; // Use the animation
   }
+
   article.nextSlide {
     transform: translateX(100%);
   }

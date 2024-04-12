@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import img1 from '../assets/img/img1.png'
 import img2 from '../assets/img/img2.png'
-import img3 from '../assets/img/img3.png'
+import img3 from '../assets/img/img_3.png'
 import img6 from '../assets/img/img6.png'
 import img5 from '../assets/img/img5.png'
 import img7 from '../assets/img/img7.png'
@@ -146,8 +146,9 @@ img{
 /* Image styling remains the same */
 img {
   width: 100%;
+  height: 100%;
   /* border-radius: 32px; */
-
+  object-fit: contain;
 }
 
 .grid_2 img, .grid_2_rev img, .grid_3 img, .grid_1 img{

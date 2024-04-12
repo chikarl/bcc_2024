@@ -3,13 +3,14 @@ import styled from 'styled-components'
 import { blogs } from '../utils/blogs'
 import blog1 from "../assets/blog1.png"
 import arrow from "../assets/Arrow Right.svg"
+import { Link } from 'react-router-dom'
 
 function BlogSection() {
   return (
     <Wrapper>
       <div className='container'>
         <h2>Blog</h2>
-          {blogs.map((blog) =>{
+          {blogs.slice(0, 3).map((blog) =>{
         const {id, title, image} = blog
         // console.log(id);
         return (
@@ -17,7 +18,9 @@ function BlogSection() {
           <div>
           <div className='rev-col'>
           <h3>{title}</h3>
-          <button>Read More <img src={arrow} alt=""className='arrow_icon' /></button>
+          <Link to={`/blog/${id}`} >
+          <button >Read More <img src={arrow} alt=""className='arrow_icon' /></button>
+          </Link>
           </div>
           </div>
           <div className='blog-img'>
@@ -51,13 +54,15 @@ h2{
   display: flex;
   align-items: center;
   background-color: transparent;
-  color: #000;
   font-size: 16px;
   padding: 8px 24px;
   border: 1px solid #000;
   border-radius: 44px;
   cursor: pointer;
   font-family: 'GeneralSans-Variable';
+}
+.flex-row .button a{
+  color: #000;
 }
 img.arrow_icon{
   width: 28px !important;

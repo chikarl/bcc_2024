@@ -30,7 +30,7 @@ function TimelineItems() {
                   </div>
                 </div>
               </div>
-              </article>
+      </article>
     </Wrapper>
 
   )

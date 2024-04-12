@@ -21,10 +21,11 @@ function Home() {
       <Register />
       {/* <Timeline /> */}
       <Steps />
+      <Partners />
       <BlogSection />
       <Gallery />
       <FaqSection />
-      <FooterSection />
+      {/* <FooterSection /> */}
     </div>
   )
 }

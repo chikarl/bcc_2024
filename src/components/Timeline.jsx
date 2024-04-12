@@ -40,6 +40,9 @@ function Timeline() {
         backgroundColor: bg_color, // Camel cased CSS property
         backgroundImage: `url(${bg_image})`,
       };
+      const divColor = {
+        color: color
+      }
       let position = 'nextSlide'
       if (itemIndex === index) {
         position = 'activeSlide'
@@ -70,7 +73,7 @@ function Timeline() {
           
         </div>
       </div>
-      <button className="btn-arrow" onClick={() => {setIndex(index +1); console.log(index, itemIndex);}}>
+      <button className="btn-arrow" onClick={() => {setIndex(index +1); console.log(index, itemIndex);}} style={divColor}>
         testing
               <img src={arrow_bg} alt="" />
       </button>

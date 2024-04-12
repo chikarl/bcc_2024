@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Carousel from "./Carousel";
@@ -13,7 +14,7 @@ function Partners() {
           <Carousel />
         </div>
         <div className="btn-center">
-          <button className="btn"><a href="#">Become a Sponsor</a></button>
+          <button className="btn button"><Link to='#'>Become a Sponsor</Link></button>
         </div>
       </div>
     </Wrapper>
@@ -34,13 +35,58 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
   }
-  button {
+  /* button {
     background-color: transparent;
     border: 1px solid black;
-  }
+  } */
+  /* button {
+  transition: all 1s ease;
+}
+  button:hover {
+    background-color:white;
+    color: black;
+  } */
   a{
     color: black;
   }
+  .button {
+  pointer-events: auto;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.button {
+  border-radius: 3rem;
+  border: 1px solid #000;
+  overflow: hidden;
+  /* color:; */
+}
+.button a{
+  position: relative;
+  mix-blend-mode: difference;
+  color: #fff !important;
+}
+
+.button::before {
+  content: '';
+  background: #fef8e6;
+  transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button:hover::before {
+  transform: translate3d(0, 100%, 0);
+}
   @media screen and (min-width: 1281px) {
   /* insert styles here */
   .carousel-div{

@@ -89,3 +89,37 @@ export const timeline = [
       image: img51,
     },
   ]
+
+
+export  const question = [
+  {
+    id: 1,
+    title: 'Do I have to allow the use of cookies?',
+    info:
+      'Organized by the Bamenda Tech Community, the challenge is open to individuals and teams who have innovative ideas and projects that address important social, economic, and environmental challenges facing the community. Participants are encouraged to submit projects that leverage technology to create solutions that have a positive impact on the community <br /> The Bamenda Community Challenge provides an excellent opportunity for aspiring entrepreneurs to receive mentorship, training, and funding to help develop their ideas into viable businesses. The competition has attracted a wide range of participants from various sectors including health, education, agriculture, and finance..',
+  },
+  {
+    id: 2,
+    title: 'How do I change my My Page password?',
+    info:
+      'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
+  },
+  {
+    id: 3,
+    title: 'What is BankID?',
+    info:
+      'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
+  },
+  {
+    id: 4,
+    title: 'Whose birth number can I use?',
+    info:
+      'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
+  },
+  {
+    id: 5,
+    title: 'When do I recieve a password ordered by letter?',
+    info:
+      'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
+  },
+]

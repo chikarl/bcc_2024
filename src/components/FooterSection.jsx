@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '../assets/logo_white.svg'
 import sponsor from '../assets/sponsor_white.svg'
@@ -9,23 +10,38 @@ function FooterSection() {
     <Wrapper>
       <div className='container'>
       <div className="flex-row">
-        <div><img src={logo} alt="" /></div>
+        <div>
+          <Link to='/'>
+          <img src={logo} alt="" />
+          </Link>
+          </div>
         <div>
           <ul className='flex-col'>
-          <li><a href="#">Facebook</a><img src={arrow} alt="" /></li>
-          <li><a href="#">Instagram</a><img src={arrow} alt="" /></li>
-          <li><a href="#">LinkedIn</a><img src={arrow} alt="" /></li>
-          <li><a href="#">Twitter/X</a><img src={arrow} alt="" /></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100091474623246" target='_blank'>Facebook</a><img src={arrow} alt="" /></li>
+          <li><a href="https://instagram.com/bamendacommunitychallenge?igshid=YmMyMTA2M2Y" target='_blank'>Instagram</a><img src={arrow} alt="" /></li>
+          <li><a href="https://www.linkedin.com/company/bamendacommunitychallenge/" target='_blank'>LinkedIn</a><img src={arrow} alt="" /></li>
+          <li><a href="https://mobile.twitter.com/BamendaCom77733" target='_blank'>Twitter/X</a><img src={arrow} alt="" /></li>
         </ul>
         </div>
       </div>
       <div className="flex-row flex-bottom">
-        <div><img src={sponsor} alt="" /></div>
+        <div>
+          <Link to='https://cits.cm/' target='_blank'>
+          <img src={sponsor} alt="" />
+          </Link>
+          </div>
         <div>
           <ul className='flex-row'>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Become a Sponsor</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <Link to='/'>About</Link>
+            {/* <a href="#">About</a> */}
+            </li>
+          <li>
+            <Link to='/'>Become a Sponsor</Link>
+            </li>
+          <li>
+            <Link to='/'>Contact</Link>
+            </li>
         </ul>
         </div>
       </div>
@@ -86,6 +102,10 @@ li img{
   }
   .flex-bottom li a{
     color: rgba(255, 255, 255, 0.5);
+  }
+  .flex-bottom li a:hover{
+  color: rgba(255, 255, 255, 1);
+  /* font-size: 18px; */
   }
 `
 export default FooterSection

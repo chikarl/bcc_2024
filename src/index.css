@@ -10,6 +10,13 @@
   font-family: 'Product Sans Regular';
   src: url(../src/assets/fonts/ProductSans-Regular.ttf);
 }
+@font-face {
+  font-family: 'Product Sans Medium';
+  src: url(../src/assets/fonts/ProductSans-Medium.ttf);
+}
+html{
+  scroll-behavior: smooth;
+}
 :root{
   --blue : #4C25EF;
 }
@@ -165,3 +172,21 @@ h2{
 @media screen and (max-width: 1600px) {
   /* insert styles here */
 }
+
+
+/* @keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  border-top-color: ;
+  animation: spinner 1s linear infinite;
+} */

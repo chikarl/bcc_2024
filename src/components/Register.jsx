@@ -16,8 +16,8 @@ function Register() {
               <p>Create a team of a maximum of 5 members</p>
               </div>
               <div className="flex-col">
-                <button className="btn">
-                  <a href="#">Submit a Solution</a>{" "}
+                <button className="btn button">
+                  <a href="#">Submit a Solution</a>
                 </button>
                 <button className="btn-arrow">
                   <img src={arrow} alt="" />
@@ -113,8 +113,8 @@ const Wrapper = styled.div`
     height: 450px;
   }
   button.btn {
-    background-color: transparent;
-    color: white;
+    /* background-color: transparent; */
+    /* color: white; */
     padding: 20px 52px;
     /* border: none; */
     border: 1px solid white;
@@ -125,9 +125,50 @@ const Wrapper = styled.div`
   }
   a {
     text-decoration: none;
-    color: white;
+    color: white !important;
     font-family: "Product Sans";
   }
 
+.button {
+  pointer-events: auto; 
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.button {
+  border-radius: 3rem;
+  /* border: 1px solid #000; */
+  overflow: hidden;
+  /* color:; */
+}
+.button a{
+  position: relative;
+  mix-blend-mode: difference;
+  /* color: #fff !important; */
+}
+
+.button::before {
+  content: '';
+  background: #4C25EF;
+  transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.button::before a{
+  color: #fff !important;
+}
+.button:hover::before {
+  transform: translate3d(0, 100%, 0);
+}
 `;
+
 export default Register;
