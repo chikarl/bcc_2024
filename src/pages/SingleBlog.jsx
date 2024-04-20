@@ -36,8 +36,17 @@ function SingleBlog() {
             </div>
           </div>
         </div>
-        <div className="container">
-          <p>{content}</p>
+        <div className="blog_container">
+          <p>Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi tincidunt aenean netus et sit. Id odio id in eu semper eu mattis tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci dolor donec laoreet hendrerit. Adipiscing faucibus mi ut sagittis et. In etiam aenean sollicitudin libero eu ac lacus urna eget. Ac eget sed lectus diam. Laoreet semper viverra a in ornare velit in elementum. Ipsum interdum nunc scelerisque consequat phasellus viverra ultrices pellentesque tempus. Condimentum pellentesque enim duis lorem eget id sed ac eu. Sodales morbi vitae nunc aliquet nibh diam. Egestas quam purus venenatis sagittis pretium at nulla at. Tortor magnis tempus nunc mauris id at blandit varius. Feugiat arcu facilisis sit cras volutpat nisl odio in. Nunc gravida quam amet proin et eu tortor fusce. Cursus eget in cursus blandit sed. Dui arcu aenean scelerisque senectus viverra.
+Molestie non ipsum congue dolor est odio. Sit ultricies lectus vitae porttitor dictum diam ullamcorper. Eu nulla ut nisi velit quis nullam nisi viverra. Non dolor malesuada in dolor ac nulla ornare sagittis. Cursus in vestibulum viverra vitae sit egestas ullamcorper libero nunc. Nibh praesent quam adipiscing faucibus in a. Accumsan interdum ante a arcu tellus ultricies semper tellus dolor.
+<p></p>
+Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi tincidunt aenean netus et sit. Id odio id in eu semper eu mattis tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci dolor donec laoreet hendrerit. Adipiscing faucibus mi ut sagittis et. In etiam aenean sollicitudin libero eu ac lacus urna eget. Ac eget sed lectus diam. Laoreet semper viverra a in ornare velit in elementum. Ipsum interdum nunc scelerisque consequat phasellus viverra ultrices pellentesque tempus. Condimentum pellentesque enim duis lorem eget id sed ac eu. Sodales morbi vitae nunc aliquet nibh diam. Egestas quam purus venenatis sagittis pretium at nulla at. Tortor magnis tempus nunc mauris id at blandit varius. Feugiat arcu facilisis sit cras volutpat nisl odio in. Nunc gravida quam amet proin et eu tortor fusce. Cursus eget in cursus blandit sed. Dui arcu aenean scelerisque senectus viverra.
+Molestie non ipsum congue dolor est odio. Sit ultricies lectus vitae porttitor dictum diam ullamcorper. Eu nulla ut nisi velit quis nullam nisi viverra. Non dolor malesuada in dolor ac nulla ornare sagittis. Cursus in vestibulum viverra vitae sit egestas ullamcorper libero nunc. Nibh praesent quam adipiscing faucibus in a. Accumsan interdum ante a arcu tellus ultricies semper tellus dolor. </p>
+<img src={img1} alt="" />
+        <p>Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi tincidunt aenean netus et sit. Id odio id in eu semper eu mattis tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci dolor donec laoreet hendrerit. Adipiscing faucibus mi ut sagittis et. In etiam aenean sollicitudin libero eu ac lacus urna eget. Ac eget sed lectus diam. Laoreet semper viverra a in ornare velit in elementum. Ipsum interdum nunc scelerisque consequat phasellus viverra ultrices pellentesque tempus. Condimentum pellentesque enim duis lorem eget id sed ac eu. Sodales morbi vitae nunc aliquet nibh diam. Egestas quam purus venenatis sagittis pretium at nulla at. Tortor magnis tempus nunc mauris id at blandit varius. Feugiat arcu facilisis sit cras volutpat nisl odio in. Nunc gravida quam amet proin et eu tortor fusce. Cursus eget in cursus blandit sed. Dui arcu aenean scelerisque senectus viverra.
+Molestie non ipsum congue dolor est odio. Sit ultricies lectus vitae porttitor dictum diam ullamcorper. Eu nulla ut nisi velit quis nullam nisi viverra. Non dolor malesuada in dolor ac nulla ornare sagittis. Cursus in vestibulum viverra vitae sit egestas ullamcorper libero nunc. Nibh praesent quam adipiscing faucibus in a. Accumsan interdum ante a arcu tellus ultricies semper tellus dolor.
+<p></p>
+Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi tincidunt aenean netus et sit. Id odio id in eu semper eu mattis tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci dolor donec laoreet hendrerit. Adipiscing faucibus mi ut sagittis et. In etiam aenean sollicitudin libero eu ac lacus urna eget. Ac eget sed lectus diam. Laoreet semper viverra a in ornare velit in elementum. Ipsum interdum nunc scelerisque consequat phasellus viverra ultrices pellentesque tempus. Condimentum pellentesque enim duis lorem eget id sed ac eu. Sodales morbi vitae nunc aliquet nibh diam. Egestas quam purus venenatis sagittis pretium at nulla at. Tortor magnis tempus nunc mauris id at blandit varius. Feugiat arcu facilisis sit cras volutpat nisl odio in. Nunc gravida quam amet proin et eu tortor fusce. Cursus eget in </p>
         </div>
       </div>
     </Wrapper>
@@ -56,18 +65,36 @@ const Wrapper = styled.div`
     height: 100%;
   }
   h2 {
-    font-family: "Product Sans Medium";
     font-size: 72px;
     font-weight: 600;
-    line-height: 72px;
-    padding: 20px 0;
+    line-height: 80px;
+    padding: 30px 0;
+  }
+  p, h6, h2{
+    font-family: "GeneralSans-Variable";
+  }
+  h6{
+    font-size: 16px;
+    font-weight: 400;
   }
   p,
   h6 {
     font-size: 16px;
   }
+.blog_container p{
+  padding-bottom: 20px;
+  text-align: justify;
+}
   span {
     font-family: "Product Sans Medium";
+  }
+  .blog_container{
+    padding: 50px 0 100px 0;
+  }
+  .blog_container img{
+    padding: 20px 0;
+    width: 100%;
+    object-fit: contain;
   }
 `;
 

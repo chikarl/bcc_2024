@@ -10,19 +10,19 @@ const Question = ({ title, info }) => {
       <header>
         
         {showInfo ? 
-        <>
-        <h4 style={{color: "#4C25EF"}}>{title}</h4>
-        <button className='btn' onClick={() => setShowInfo(!showInfo)}>
+        <div onClick={() => setShowInfo(!showInfo)}>
+        <h4 style={{color: "#4C25EF"}} >{title}</h4>
+        <button className='btn'>
           <img src={subtractIcon} alt="" />
         </button>
-        </>
+        </div>
         :
-        <>
-        <h4>{title}</h4>
-        <button className='btn' onClick={() => setShowInfo(!showInfo)}>
+        <div onClick={() => setShowInfo(!showInfo)}>
+        <h4 >{title}</h4>
+        <button className='btn' >
           <img src={addIcon}  />
         </button>
-        </>
+        </div>
         }
       </header>
       {showInfo && <p>{info}</p>}
@@ -32,7 +32,11 @@ const Question = ({ title, info }) => {
 };
 
 const Wrapper = styled.div`
-
+div{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .question {
   padding: 48px 0;
   border: 2px solid var(--clr-grey-special);
@@ -55,6 +59,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 .question header h4 {
   margin-bottom: 0;

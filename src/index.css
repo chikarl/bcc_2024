@@ -2,7 +2,7 @@
   font-family: 'Product Sans';
   src: url(../src/assets/fonts/ProductSans-Thin.ttf);
 }
-@font-face {
+/* @font-face {
   font-family: 'Product Sans Light';
   src: url(../src/assets/fonts/ProductSans-Light.ttf);
 }
@@ -13,7 +13,7 @@
 @font-face {
   font-family: 'Product Sans Medium';
   src: url(../src/assets/fonts/ProductSans-Medium.ttf);
-}
+} */
 html{
   scroll-behavior: smooth;
 }
@@ -26,7 +26,7 @@ html{
   box-sizing: border-box;
 }
 body{
-font-family: 'Product Sans', sans-serif;
+font-family: 'GeneralSans-Variable', sans-serif;
   background-color: #fff;
   color: #000;
   font-size: 1rem;
@@ -52,6 +52,10 @@ a{
   width: 1256px;
   /* width: 80%; */
 }
+.blog_container{
+  width: 815px;
+  margin:  0 auto;
+}
 .flex-row{
   display: flex;
   flex-direction: row;
@@ -59,6 +63,10 @@ a{
 .flex-col{
   display: flex;
   flex-direction: column;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family:'Product Sans' ;
+  /* font-weight: 100; */
 }
 h2{
   font-size: 2rem;
@@ -70,6 +78,48 @@ h2{
       border-radius: 36px;
       padding: 8px 28px;
     }
+/* .button {
+    background-color: transparent;
+    padding: 0 5px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+
+.button::after {
+  background-color: black;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.button:hover::after {
+  transform: translate(0, 0);
+}
+
+.button:hover {
+  border: 2px solid transparent;
+  color: white;
+  transform: scale(1.05);
+  will-change: transform;
+}
+.button:hover img{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+} */
 
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
