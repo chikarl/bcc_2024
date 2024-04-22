@@ -7,24 +7,24 @@ import FooterSection from './components/FooterSection';
 import Loading from './components/Loading';
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // Assuming 'load' event is for the whole window to ensure all resources are loaded
-    const handleLoad = () => {
-      setLoading(false);
-    };
+  // useEffect(() => {
+  //   // Assuming 'load' event is for the whole window to ensure all resources are loaded
+  //   const handleLoad = () => {
+  //     setLoading(false);
+  //   };
 
-    // Add event listener for 'load'
-    window.addEventListener('load', handleLoad);
+  //   // Add event listener for 'load'
+  //   window.addEventListener('load', handleLoad);
 
-    // Remove event listener on cleanup
-    return () => window.removeEventListener('load', handleLoad);
-  }, []);
+  //   // Remove event listener on cleanup
+  //   return () => window.removeEventListener('load', handleLoad);
+  // }, []);
 
-  if (loading) {
-    return <Loading />;
-  }
+  // if (loading) {
+  //   return <Loading />;
+  // }
 
   return (
     <>
