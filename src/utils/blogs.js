@@ -9,7 +9,86 @@ export const blogs =  [
             "id":0,
             "title": "Announcing the 3rd Edition of the Bamenda Community Challenge",
             "image": blog1,
-            "content": "This is the content for post 1. It explores various topics and insights relevant to today's interests and innovations.",
+            "content": `'<p>
+            <b>Lorem ipsum dolor sit</b> amet consectetur. Quam luctus nulla morbi
+            tincidunt aenean netus et sit. Id odio id in eu semper eu mattis
+            tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci
+            dolor donec laoreet hendrerit. Adipiscing faucibus mi ut sagittis
+            et. In etiam aenean sollicitudin libero eu ac lacus urna eget. Ac
+            eget sed lectus diam. Laoreet semper viverra a in ornare velit in
+            elementum. Ipsum interdum nunc scelerisque consequat phasellus
+            viverra ultrices pellentesque tempus. Condimentum pellentesque enim
+            duis lorem eget id sed ac eu. Sodales morbi vitae nunc aliquet nibh
+            diam. Egestas quam purus venenatis sagittis pretium at nulla at.
+            Tortor magnis tempus nunc mauris id at blandit varius. Feugiat arcu
+            facilisis sit cras volutpat nisl odio in. Nunc gravida quam amet
+            proin et eu tortor fusce. Cursus eget in cursus blandit sed. Dui
+            arcu aenean scelerisque senectus viverra. Molestie non ipsum congue
+            dolor est odio. Sit ultricies lectus vitae porttitor dictum diam
+            ullamcorper. Eu nulla ut nisi velit quis nullam nisi viverra. Non
+            dolor malesuada in dolor ac nulla ornare sagittis. Cursus in
+            vestibulum viverra vitae sit egestas ullamcorper libero nunc. Nibh
+            praesent quam adipiscing faucibus in a. Accumsan interdum ante a
+            arcu tellus ultricies semper tellus dolor.
+            <p></p>
+            Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi
+            tincidunt aenean netus et sit. Id odio id in eu semper eu mattis
+            tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci
+            dolor donec laoreet hendrerit. Adipiscing faucibus mi ut sagittis
+            et. In etiam aenean sollicitudin libero eu ac lacus urna eget. Ac
+            eget sed lectus diam. Laoreet semper viverra a in ornare velit in
+            elementum. Ipsum interdum nunc scelerisque consequat phasellus
+            viverra ultrices pellentesque tempus. Condimentum pellentesque enim
+            duis lorem eget id sed ac eu. Sodales morbi vitae nunc aliquet nibh
+            diam. Egestas quam purus venenatis sagittis pretium at nulla at.
+            Tortor magnis tempus nunc mauris id at blandit varius. Feugiat arcu
+            facilisis sit cras volutpat nisl odio in. Nunc gravida quam amet
+            proin et eu tortor fusce. Cursus eget in cursus blandit sed. Dui
+            arcu aenean scelerisque senectus viverra. Molestie non ipsum congue
+            dolor est odio. Sit ultricies lectus vitae porttitor dictum diam
+            ullamcorper. Eu nulla ut nisi velit quis nullam nisi viverra. Non
+            dolor malesuada in dolor ac nulla ornare sagittis. Cursus in
+            vestibulum viverra vitae sit egestas ullamcorper libero nunc. Nibh
+            praesent quam adipiscing faucibus in a. Accumsan interdum ante a
+            arcu tellus ultricies semper tellus dolor.
+          </p>
+          <img src='/src/assets/header_img.png' alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi
+            tincidunt aenean netus et sit. Id odio id in eu semper eu mattis
+            tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci
+            dolor donec laoreet hendrerit. Adipiscing faucibus mi ut sagittis
+            et. In etiam aenean sollicitudin libero eu ac lacus urna eget. Ac
+            eget sed lectus diam. Laoreet semper viverra a in ornare velit in
+            elementum. Ipsum interdum nunc scelerisque consequat phasellus
+            viverra ultrices pellentesque tempus. Condimentum pellentesque enim
+            duis lorem eget id sed ac eu. Sodales morbi vitae nunc aliquet nibh
+            diam. Egestas quam purus venenatis sagittis pretium at nulla at.
+            Tortor magnis tempus nunc mauris id at blandit varius. Feugiat arcu
+            facilisis sit cras volutpat nisl odio in. Nunc gravida quam amet
+            proin et eu tortor fusce. Cursus eget in cursus blandit sed. Dui
+            arcu aenean scelerisque senectus viverra. Molestie non ipsum congue
+            dolor est odio. Sit ultricies lectus vitae porttitor dictum diam
+            ullamcorper. Eu nulla ut nisi velit quis nullam nisi viverra. Non
+            dolor malesuada in dolor ac nulla ornare sagittis. Cursus in
+            vestibulum viverra vitae sit egestas ullamcorper libero nunc. Nibh
+            praesent quam adipiscing faucibus in a. Accumsan interdum ante a
+            arcu tellus ultricies semper tellus dolor.
+            <p></p>
+            Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi
+            tincidunt aenean netus et sit. Id odio id in eu semper eu mattis
+            tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci
+            dolor donec laoreet hendrerit. Adipiscing faucibus mi ut sagittis
+            et. In etiam aenean sollicitudin libero eu ac lacus urna eget. Ac
+            eget sed lectus diam. Laoreet semper viverra a in ornare velit in
+            elementum. Ipsum interdum nunc scelerisque consequat phasellus
+            viverra ultrices pellentesque tempus. Condimentum pellentesque enim
+            duis lorem eget id sed ac eu. Sodales morbi vitae nunc aliquet nibh
+            diam. Egestas quam purus venenatis sagittis pretium at nulla at.
+            Tortor magnis tempus nunc mauris id at blandit varius. Feugiat arcu
+            facilisis sit cras volutpat nisl odio in. Nunc gravida quam amet
+            proin et eu tortor fusce. Cursus eget in
+          </p>'`,
             "author": "Chungom Emmanuel",
             bg_color: "#F9BA04", 
             color: "black"

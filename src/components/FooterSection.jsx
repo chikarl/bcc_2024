@@ -133,6 +133,7 @@ li img{
   .footer_btn::after {
     background-color: white;
     /* border-radius: 3rem; */
+    /* border-radius: 36px; */
     content: "";
     display: block;
     height: 100%;
@@ -156,6 +157,9 @@ li img{
     color: black;
     transform: scale(1.05);
     will-change: transform;
+    /* border-radius: 36px; */
+    justify-content: center;
+    padding: 10px;
   }
    .footer_btn:hover a{
     color: #000;

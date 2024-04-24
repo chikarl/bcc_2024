@@ -28,8 +28,8 @@ const Wrapper = styled.div`
   }
   .carousel-div{
     padding: 68px 0;
-    /* width: calc(1530px - 161px); */
-    /* margin-left: calc((100% - 80%) / 2) !important; */
+    width: calc(1530px - 161px);
+    margin-left: calc((100% - 80%) / 2) !important;
   }
   .btn-center {
     display: flex;
