@@ -11,8 +11,7 @@ function BlogSection() {
   return (
     <Wrapper>
       <div className="container">
-        <h2>Blog</h2>
-        {blogs.slice(0, 3).map((blog) => {
+        {blogs.map((blog) => {
           const { id, title, image } = blog;
           // console.log(id);
           return (
@@ -34,7 +33,6 @@ function BlogSection() {
             </div>
           );
         })}
-        <button className="btn button ">View More</button>
       </div>
     </Wrapper>
   );
@@ -54,7 +52,7 @@ const Wrapper = styled.div`
     align-items: center;
     /* margin-bottom: 58px; */
   }
-  .flex-row:nth-child(odd) {
+  .flex-row:nth-child(even) {
     flex-direction: row-reverse;
   }
   .flex-row > div {
@@ -121,7 +119,7 @@ const Wrapper = styled.div`
     font-size: 40px;
     margin-bottom: 32px;
   }
-  .flex-row:nth-child(odd) .rev-col {
+  .flex-row:nth-child(even) .rev-col {
     margin-right: 0;
     margin-left: 50px;
   }

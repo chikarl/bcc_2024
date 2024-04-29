@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import SingleBlog from './pages/SingleBlog';
 import Error from './pages/Error';
+import Blog from './pages/Blog'
+import Winners from './pages/Winners';
 import FooterSection from './components/FooterSection';
 import Loading from './components/Loading';
 
@@ -31,6 +33,8 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='blog' element={<Blog />} />
+          <Route path='winners' element={<Winners />} />
           <Route path='blog/:blog_id' element={<SingleBlog />} />
           <Route path='*' element={<Error />} />
         </Routes>

@@ -2,6 +2,10 @@
   font-family: 'Product Sans';
   src: url(../src/assets/fonts/ProductSans-Thin.ttf);
 }
+@font-face {
+  font-family: "Product Sans Black";
+  src: url(../assets/fonts/ProductSans-Black.ttf);
+}
 /* @font-face {
   font-family: 'Product Sans Light';
   src: url(../src/assets/fonts/ProductSans-Light.ttf);
@@ -35,7 +39,7 @@ font-family: 'GeneralSans-Variable', sans-serif;
 }
 a{
   text-decoration: none;
-  font-family: 'Product Sans', sans-serif;
+font-family: 'GeneralSans-Variable', sans-serif;
 }
 .btn {
   /* background-color: transparent; */

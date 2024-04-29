@@ -11,6 +11,10 @@ import Carousel from '../components/Carousel'
 import HeaderCarousel from '../components/HeaderCarousel'
 import FooterSection from '../components/FooterSection'
 import FaqSection from '../components/FaqSection'
+import ContactSection from '../components/ContactSection'
+import CriteriaSection from '../components/CriteriaSection'
+import Top3Section from '../components/Top3Section'
+
 function Home() {
   return (
     <div>
@@ -22,8 +26,11 @@ function Home() {
       {/* <Timeline /> */}
       <Steps />
       <Partners />
+      <Top3Section />
+      <CriteriaSection />
       <BlogSection />
       <Gallery />
+      <ContactSection />
       <FaqSection />
       {/* <FooterSection /> */}
     </div>

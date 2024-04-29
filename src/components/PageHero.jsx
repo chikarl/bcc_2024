@@ -1,45 +1,53 @@
 import React from 'react'
 import styled from 'styled-components'
+import logoBlack from '../assets/logo-black.svg'
 import { Link } from 'react-router-dom'
 
-import logo from '../assets/logo.svg'
 
+const PageHero = ({ title }) => {
 
-function nav() {
   return (
-    <Wrapper>
+    <Wrapper className='container'>
       <div className='flex-row'>
         <div>
-        <div className='logo'><img src={logo} alt="" /></div>
+          <Link to='/' className='logo'> 
+          <img src={logoBlack} alt="logo" />
+          </Link>
 
         </div>
       <div>
         <ul>
           <li><a href="#">TImeline</a></li>
           <li><a href="#">Prizes</a></li>
-          <li><Link to='/blog'>Blog</Link></li>
-          <li><Link to='/winners'>Winners</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/winners">Winners</Link></li>
         </ul>
       </div>
+      </div>
+      <div>
+        <h1>{title}</h1>
       </div>
     </Wrapper>
   )
 }
 const Wrapper = styled.div`
-@font-face {
-  font-family:'Product Sans Thin'; ;
-  src: url(../assets/fonts/ProductSans-Thin.ttf);
-}
+
 .flex-row{
-  font-family: 'Product Sans Thin';
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px;
-  background-color: #4C25EF;
-  color: white;
+  padding: 30px 0px;
+  /* background-color: #F9BA04; */
+  /* color: #000; */
   font-weight: 100;
+  align-items: center;
 }
-
+h1{
+  font-size: 72px;
+  font-family: "Product Sans Black";
+  margin: 50px 0 100px 0;
+  line-height: 75px;
+  width: 620px;
+}
 ul{
   display: flex;
   justify-content: space-between;
@@ -51,9 +59,10 @@ li{
   padding: 0;
 }
 li a{
-  color: white;
+  color: black;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
 }
 @media only screen and  (max-width: 1024px) {
   .logo{
@@ -63,4 +72,4 @@ li a{
     height: 100%;
   }}
 `
-export default nav
+export default PageHero

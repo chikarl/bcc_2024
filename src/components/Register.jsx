@@ -150,7 +150,7 @@ const Wrapper = styled.div`
   .container {
     display: flex;
     overflow: hidden;
-    border-radius: 32px;
+    border-radius: 48px;
   }
 
   .text-section {
