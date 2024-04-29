@@ -57,7 +57,7 @@ export const winners2022top8 = [
     "iframe_src": "https://www.youtube.com/embed/Q0nQEP0zK5g",
     "members": ["Bora Faith", "Lukong Charlotte", "Manka Zoe"],
     description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem tenetur consequuntur delectus rerum iste facilis, quibusdam beatae deserunt pariatur non velit saepe nesciunt alias consequatur officiis quo impedit? Iusto.',
-    color: '#E8F2FF'
+    color: '#FFEDEA'
   },
   {
     id:3,
@@ -65,7 +65,7 @@ export const winners2022top8 = [
     "iframe_src": "https://www.youtube.com/embed/Jda3jIPGacI",
     "members": ["Mofiro Jean", "Shenyuy Goodness", "Akumbom Wesley", "Neba Desmond"],
     description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem tenetur consequuntur delectus rerum iste facilis, quibusdam beatae deserunt pariatur non velit saepe nesciunt alias consequatur officiis quo impedit? Iusto.',
-    color: '#E8F2FF'
+    color: '#F3EEFF'
   },
   {
     id:4,

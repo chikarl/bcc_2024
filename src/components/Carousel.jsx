@@ -31,9 +31,9 @@ const Carousel = () => {
 };
 
 const Wrapper = styled.div`
-  .conteudo{
+  /* .conteudo{
     width: 450px;
-  }
+  } */
 
 .carrousel{ 
   display: grid;
@@ -50,7 +50,7 @@ const Wrapper = styled.div`
 .card {
   background-color: white;
   scroll-snap-align: start;
-  /* border-radius: 30px; */
+  border-radius: 24px;
   padding: 32px;
   max-height: 193px;
   min-width: 404px;

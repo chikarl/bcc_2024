@@ -32,28 +32,6 @@ function TeamListView() {
             </div>
           );
         })}
-        <div className="flex-row">
-          <div>
-            <h3>Matazm</h3>
-            <h5>Tim Paul Junior, Akwo Thomas, Budi Hitler</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem
-              tenetur consequuntur delectus rerum iste facilis, quibusdam beatae
-              deserunt pariatur non velit saepe nesciunt alias consequatur
-              officiis quo impedit? Iusto.
-            </p>
-          </div>
-          <div>
-            <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/etsJQieHEyw"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-          </div>
-        </div>
       </div>
     </Wrapper>
   );

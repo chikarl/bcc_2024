@@ -7,13 +7,12 @@ import Gallery from '../components/Gallery'
 import Partners from '../components/Partners'
 import BlogSection from '../components/BlogSection'
 import Steps from '../components/Steps'
-import Carousel from '../components/Carousel'
 import HeaderCarousel from '../components/HeaderCarousel'
-import FooterSection from '../components/FooterSection'
 import FaqSection from '../components/FaqSection'
 import ContactSection from '../components/ContactSection'
 import CriteriaSection from '../components/CriteriaSection'
 import Top3Section from '../components/Top3Section'
+import TeamCarousel from '../components/TeamCarousel'
 
 function Home() {
   return (
@@ -26,6 +25,7 @@ function Home() {
       {/* <Timeline /> */}
       <Steps />
       <Partners />
+      <TeamCarousel />
       <Top3Section />
       <CriteriaSection />
       <BlogSection />

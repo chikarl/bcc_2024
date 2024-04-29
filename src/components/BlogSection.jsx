@@ -34,7 +34,11 @@ function BlogSection() {
             </div>
           );
         })}
+        <div className="btn-center">
+          <Link to="/blog">
         <button className="btn button ">View More</button>
+        </Link>
+        </div>
       </div>
     </Wrapper>
   );
@@ -135,6 +139,59 @@ const Wrapper = styled.div`
     object-fit: cover;
     object-position: center;
     border-radius: 32px;
+  }
+  .btn-center {
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+  }
+  a {
+    color: black;
+  }
+  .button {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0 5px;
+    /* border: 1px solid transparent; */
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    padding: 24px 48px;
+    border: 1px solid black;
+    border-radius: 36px;
+    font-size: 1rem;
+    color: black;
+  }
+
+  .button::after {
+    background-color: black;
+    border-radius: 3rem;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+
+  .button:hover::after {
+    transform: translate(0, 0);
+  }
+
+  .button:hover {
+    border: 2px solid transparent;
+    color: white;
+    transform: scale(1.05);
+    will-change: transform;
   }
 `;
 export default BlogSection;
