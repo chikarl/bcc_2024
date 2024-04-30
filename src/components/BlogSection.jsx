@@ -1,26 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { blogs } from "../utils/blogs";
-import blog1 from "../assets/blog1.png";
-import arrow from "../assets/Arrow Right.svg";
+import axios from "axios";
+import Loading from "./Loading";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import arrow from "../assets/Arrow Right.svg";
+import BlogImg from "./BlogImg";
 
 function BlogSection() {
-  return (
-    <Wrapper>
-      <div className="container">
-        <h2>Blog</h2>
-        {blogs.slice(0, 3).map((blog) => {
-          const { id, title, image } = blog;
-          // console.log(id);
-          return (
-            <div className="flex-row" key={id}>
+  const [posts, setPosts] = useState([]);
+  const [imgUrl, setImgUrl] = useState('');
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    axios.get('https://bcc.christmastreeemporium.com/wp-json/wp/v2/posts')
+      .then(res => {
+        setPosts(res.data);
+        setIsLoaded(true);
+      })
+      .catch(err => console.log(err));
+  }, []);
+
+  if (isLoaded) {
+    return (
+      <Wrapper>
+        <div className="container">
+          <h2>Blog</h2>
+        {posts.slice(0, 3).map(post => (
+            <div className="flex-row" key={post.id}>
               <div>
                 <div className="rev-col">
-                  <h3>{title}</h3>
-                  <Link to={`/blog/${id}`}>
+                  <h3>{post.title.rendered}</h3>
+                  <Link to={`/blog/${post.id}`}>
                     <button>
                       Read More{" "}
                       <img src={arrow} alt="" className="arrow_icon" />
@@ -29,20 +40,18 @@ function BlogSection() {
                 </div>
               </div>
               <div className="blog-img">
-                <img src={image} alt="" />
+                <BlogImg  featured_media={post.featured_media} />
               </div>
             </div>
-          );
-        })}
-        <div className="btn-center">
-          <Link to="/blog">
-        <button className="btn button ">View More</button>
-        </Link>
+        ))}
         </div>
-      </div>
-    </Wrapper>
-  );
+      </Wrapper>
+    );
+  }
+  
+  return <Loading />;
 }
+
 const Wrapper = styled.div`
   margin: 100px 0;
   h2 {

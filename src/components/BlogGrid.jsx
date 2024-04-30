@@ -1,24 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { blogs } from "../utils/blogs";
+//import { blogs } from "../utils/blogs";
 import blog1 from "../assets/blog1.png";
 import arrow from "../assets/Arrow Right.svg";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
-function BlogSection() {
+function BlogSection({ post }) {
+  const { title, id, featured_media, author } = post;
+  const [imgUrl, setImgUrl] = useState('');
+  const [isLoaded, setIsLoaded] = useState(false);
+  console.log(title, id, featured_media, author);
+  // const getImageUrl = axios.get(`https://livewellcmr.com/wp-json/wp/v2/media/${featured_media}`)
+  // const getAuthor = axios.get(`https://livewellcmr.com/wp-json/wp/v2/users/${author}`)
+  useEffect(() => {
+    axios.get(`https://bcc.christmastreeemporium.com/wp-json/wp/v2/media/${featured_media}`)
+      .then(res => {
+        setImgUrl(res.data.media_details.sizes.full.source_url);
+        setIsLoaded(true);
+      })
+      .catch(err => console.log(err));
+  }, []);
+  if(!isLoaded) {
+    return null;
+  }
   return (
-    <Wrapper>
-      <div className="container">
-        {blogs.map((blog) => {
-          const { id, title, image } = blog;
-          // console.log(id);
-          return (
-            <div className="flex-row" key={id}>
+    <Wrapper className="flex-row">
+          {/* <div > */}
               <div>
                 <div className="rev-col">
-                  <h3>{title}</h3>
+                  <h3>{title.rendered}</h3>
                   <Link to={`/blog/${id}`}>
                     <button>
                       Read More{" "}
@@ -28,17 +39,15 @@ function BlogSection() {
                 </div>
               </div>
               <div className="blog-img">
-                <img src={image} alt="" />
+                <img src={imgUrl} alt="" />
               </div>
-            </div>
-          );
-        })}
-      </div>
+            {/* </div> */}
+
     </Wrapper>
   );
 }
 const Wrapper = styled.div`
-  margin: 100px 0;
+  /* margin: 100px 0; */
   h2 {
     margin-bottom: 48px;
   }
@@ -52,9 +61,9 @@ const Wrapper = styled.div`
     align-items: center;
     /* margin-bottom: 58px; */
   }
-  .flex-row:nth-child(even) {
+  /* .flex-row:nth-child(even) {
     flex-direction: row-reverse;
-  }
+  } */
   .flex-row > div {
     width: 50%;
   }

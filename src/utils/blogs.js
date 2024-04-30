@@ -6,7 +6,7 @@ import blog3 from '../assets/blog3.png'
 
 export const blogs =  [
         {
-            "id":0,
+            "id":10,
             "title": "Announcing the 3rd Edition of the Bamenda Community Challenge",
             "image": blog1,
             "content": `'<p>
