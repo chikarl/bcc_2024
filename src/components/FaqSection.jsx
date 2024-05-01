@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import data from '../utils/helper';
 import { question } from '../utils/helper';
 import SingleQuestion from './Question';
 import styled from 'styled-components';

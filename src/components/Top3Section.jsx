@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { timeline } from "../utils/helper";
 import styled, { keyframes } from "styled-components";
 import { winners2023 } from "../utils/winners";
 
@@ -12,7 +11,6 @@ const slideIn = keyframes`
   }
 `;
 
-// Keyframes for the slide-out effect
 const slideOut = keyframes`
   from {
     transform: translateX(0);
@@ -36,14 +34,14 @@ function Top3Section() {
     }
   }, [index, people]);
 
-  // useEffect(() => {
-  //   let slider = setInterval(() => {
-  //     setIndex(index + 1);
-  //   }, 10000);
-  //   return () => {
-  //     clearInterval(slider);
-  //   };
-  // }, [index]);
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 10000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
 
   return (
     <>
@@ -63,7 +61,6 @@ function Top3Section() {
             } = person;
             const divStyle = {
               color: color,
-              // backgroundColor: bg_color, // Camel cased CSS property
               backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0), ${bg_color}),
     url(${bg_img})`,
             };
@@ -86,49 +83,52 @@ function Top3Section() {
                 <article className={position} key={id}>
                   <div style={divStyle} className="main flex-row">
                     <div className="container">
-                    <div className="winners">
-                      <h2>Meet our 2023 Winners</h2>
-                      <div className="">
-                        <h1>{title}</h1>
-                        <h2>{team_position}</h2>
-                        <p>{content}</p>
-                        <div >
-                          {color === "black" ? (
-                            <div className="flex-row">
-                              <button className="btn button black">
-                                View Dome
-                              </button>
-                              <button className="btn button black ">
-                                Read More
-                              </button>
-                              <button
-                                className="btn-arrow black button"
-                                onClick={() => setIndex(index + 1)}
-                                style={divColor}>
-                                <img src={arrow} alt="" />
-                              </button>
-                            </div>
-                          ) : (
-                            <div className="flex-row">
-                              <button className="btn button white " style={divColor}>
-                               Watch Demo
-                              </button>
-                              <button className="btn button white " style={divColor}>
-                                Read Article
-                              </button>
-                              <button
-                                className="btn-arrow white button"
-                                onClick={() => setIndex(index + 1)}
-                                style={divColor}>
-                                <img src={arrow} alt="" />
-                              </button>
-                            </div>
-                          )}
+                      <div className="winners">
+                        <h2>Meet our 2023 Winners</h2>
+                        <div className="">
+                          <h1>{title}</h1>
+                          <h2>{team_position}</h2>
+                          <p>{content}</p>
+                          <div>
+                            {color === "black" ? (
+                              <div className="flex-row">
+                                <button className="btn button black">
+                                  View Dome
+                                </button>
+                                <button className="btn button black ">
+                                  Read More
+                                </button>
+                                <button
+                                  className="btn-arrow black button"
+                                  onClick={() => setIndex(index + 1)}
+                                  style={divColor}>
+                                  <img src={arrow} alt="" />
+                                </button>
+                              </div>
+                            ) : (
+                              <div className="flex-row">
+                                <button
+                                  className="btn button white "
+                                  style={divColor}>
+                                  Watch Demo
+                                </button>
+                                <button
+                                  className="btn button white "
+                                  style={divColor}>
+                                  Read Article
+                                </button>
+                                <button
+                                  className="btn-arrow white button"
+                                  onClick={() => setIndex(index + 1)}
+                                  style={divColor}>
+                                  <img src={arrow} alt="" />
+                                </button>
+                              </div>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
-                    </div>
-                    {/* <div><h1>testing</h1></div> */}
                   </div>
                 </article>
               </>
@@ -143,16 +143,9 @@ function Top3Section() {
 const Wrapper = styled.div`
   height: 100vh;
   margin: 0 auto;
-  /* margin-top: 4rem; */
   position: relative;
   display: flex;
   overflow: hidden;
-
-  /* .btn-arrow {
-    z-index: 100px;
-    cursor: pointer;
-    border: 2px solid red;
-  } */
   article {
     position: absolute;
     top: 0;
@@ -177,7 +170,6 @@ const Wrapper = styled.div`
     transform: translateX(100%);
   }
   .main {
-    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -196,14 +188,13 @@ const Wrapper = styled.div`
   h1 {
     font-family: "Product Sans Light";
     font-size: 96px;
-    line-height:100px ;
+    line-height: 100px;
     padding: 30px 0 10px 0;
   }
   h2 {
     font-size: 36px;
-    /* padding: 20px 0 30px 0; */
   }
-  p{
+  p {
     padding-bottom: 20px;
   }
   .button {
@@ -220,12 +211,10 @@ const Wrapper = styled.div`
     will-change: transform;
     z-index: 0;
   }
-  .btn{
-    margin-right: 20px ;
+  .btn {
+    margin-right: 20px;
     padding: 15px 48px;
-    /* border: 1px solid white; */
     font-size: 16px;
-    /* margin: 20px 0 40px 0; */
   }
   .black.button::after {
     background-color: black;

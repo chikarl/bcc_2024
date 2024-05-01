@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { blogs } from "../utils/blogs";
 import axios from "axios";
 import Loading from "./Loading";
 import { Link } from "react-router-dom";
@@ -9,7 +8,6 @@ import BlogImg from "./BlogImg";
 
 function BlogSection() {
   const [posts, setPosts] = useState([]);
-  const [imgUrl, setImgUrl] = useState('');
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -65,7 +63,6 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 58px; */
   }
   .flex-row:nth-child(odd) {
     flex-direction: row-reverse;
@@ -161,7 +158,6 @@ const Wrapper = styled.div`
     cursor: pointer;
     background-color: transparent;
     padding: 0 5px;
-    /* border: 1px solid transparent; */
     overflow: hidden;
     position: relative;
     text-decoration: none;

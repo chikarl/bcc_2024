@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { winners2022top8 } from "../utils/winners";
 import styled, { keyframes } from "styled-components";
-import img1 from "../assets/BCC23IMG_1.png";
 import arrow from "../assets/Arrow Right.svg";
-// import arrow from "../assets/ArrowWhite.svg";
 
 const slideIn = keyframes`
   from {
@@ -38,15 +35,6 @@ function TeamCarousel() {
       setIndex(0);
     }
   }, [index, people]);
-
-  // useEffect(() => {
-  //   let slider = setInterval(() => {
-  //     setIndex(index + 1);
-  //   }, 10000);
-  //   return () => {
-  //     clearInterval(slider);
-  //   };
-  // }, [index]);
 
   return (
     <Wrapper>
@@ -168,7 +156,6 @@ const Wrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    /* opacity: 0; */
     transition: var(--transition);
   }
   article.activeSlide {

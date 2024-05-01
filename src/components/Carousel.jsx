@@ -1,7 +1,5 @@
-// import { useState, useRef, useEffect } from "react";
-import styled from "styled-components";
 
-// Data
+import styled from "styled-components";
 import { resources } from "../utils/data";
 
 const Carousel = () => {
@@ -11,7 +9,6 @@ const Carousel = () => {
       <div>
         <div className="carrousel">
             {resources.map((resource, index) => {
-              // {{console.log(resource)}}
             return (
               <div
                 key={index} className="card" >
@@ -31,10 +28,6 @@ const Carousel = () => {
 };
 
 const Wrapper = styled.div`
-  /* .conteudo{
-    width: 450px;
-  } */
-
 .carrousel{ 
   display: grid;
   grid-auto-flow: column;
@@ -61,11 +54,5 @@ const Wrapper = styled.div`
 .card svg{
   height: 128px;
 }
-/* .card:nth-child(odd) {
-  background: linear-gradient(-229deg, #fbd52d, #ef3a7b);
-}
-.card:nth-child(even) {
-  background: linear-gradient(-220deg, #ff70af, #5fa8f5);
-  } */
 `
 export default Carousel;

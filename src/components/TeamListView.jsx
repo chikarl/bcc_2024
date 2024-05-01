@@ -8,15 +8,17 @@ function TeamListView() {
       <h2>Meet Our Top 10 Teams</h2>
       <div>
         {winners2022top8.map((team, index) => {
-          const { id, title, members,description, iframe_src, color } = team;
-          const divColor = {backgroundColor: color}
+          const { id, title, members, description, iframe_src, color } = team;
+          const divColor = { backgroundColor: color };
           return (
             <div className="flex-row" key={id} style={divColor}>
               <div>
                 <h3>{title}</h3>
-                <h5>{members.map((member, index) =>(
-                  <span key={index}>{member}, </span>
-                ))}</h5>
+                <h5>
+                  {members.map((member, index) => (
+                    <span key={index}>{member}, </span>
+                  ))}
+                </h5>
                 <p>{description}</p>
               </div>
               <div>
@@ -38,29 +40,28 @@ function TeamListView() {
 }
 const Wrapper = styled.div`
   margin: 100px 0;
-  .flex-row{
+  .flex-row {
     padding: 20px;
-    background-color: #E8F2FF;
+    background-color: #e8f2ff;
     color: #000;
     align-items: center;
     border-radius: 48px;
     gap: 20px;
     margin-top: 48px;
   }
-  .flex-row > div{
+  .flex-row > div {
     width: 50%;
   }
-  h3{
-  font-family: "Product Sans Black";
+  h3 {
+    font-family: "Product Sans Black";
     font-size: 48px;
   }
-  h5{
+  h5 {
     font-size: 20px;
   }
-  iframe{
+  iframe {
     border-radius: 32px;
     width: 100%;
-    /* height: 100%; */
   }
 `;
 export default TeamListView;

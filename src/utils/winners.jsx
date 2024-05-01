@@ -1,5 +1,4 @@
 import React from "react";
-
 import blog1 from "../assets/teams/w1.jpg";
 import blog2 from "../assets/teams/w2.jpg";
 import blog3 from "../assets/teams/w3.jpg";

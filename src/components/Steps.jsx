@@ -11,7 +11,6 @@ const slideIn = keyframes`
   }
 `;
 
-// Keyframes for the slide-out effect
 const slideOut = keyframes`
   from {
     transform: translateX(0);
@@ -61,8 +60,7 @@ function App() {
             } = person;
             const divStyle = {
               color: color,
-              backgroundColor: bg_color, // Camel cased CSS property
-              // backgroundImage: `url(${bg_image})`,
+              backgroundColor: bg_color,
             };
             const divColor = {
               borderColor: color,
@@ -89,21 +87,25 @@ function App() {
                       <div className="container timeline">
                         <h4>Timeline</h4>
                         <div className={class_name}>
-                        <h1>{title}</h1>
-                        <h2>{data}</h2>
-                        <div style={{ zIndex: 100 }}>
-                          {color === "black" ? (<button
-                            className="btn-arrow black button"
-                            onClick={() => setIndex(index + 1)}
-                            style={divColor}>
-                            <img src={arrow} alt="" />
-                          </button>): <button
-                            className="btn-arrow white button"
-                            onClick={() => setIndex(index + 1)}
-                            style={divColor}>
-                            <img src={arrow} alt="" />
-                          </button>}
-                        </div>
+                          <h1>{title}</h1>
+                          <h2>{data}</h2>
+                          <div style={{ zIndex: 100 }}>
+                            {color === "black" ? (
+                              <button
+                                className="btn-arrow black button"
+                                onClick={() => setIndex(index + 1)}
+                                style={divColor}>
+                                <img src={arrow} alt="" />
+                              </button>
+                            ) : (
+                              <button
+                                className="btn-arrow white button"
+                                onClick={() => setIndex(index + 1)}
+                                style={divColor}>
+                                <img src={arrow} alt="" />
+                              </button>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -132,12 +134,12 @@ const Wrapper = styled.div`
     object-fit: contain;
     object-position: center;
   }
-  .timeline-item-4{
+  .timeline-item-4 {
     margin: 0 0 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-        width: 300px;
+    width: 300px;
   }
   .btn-arrow {
     z-index: 100px;
@@ -196,14 +198,9 @@ const Wrapper = styled.div`
     font-family: "Product Sans";
     font-weight: 100;
   }
-  
-/* .button {
-  background-color: transparent;
-  padding: 0 5px;
-  color: white;
-} */
-.button {
-  cursor: pointer;
+
+  .button {
+    cursor: pointer;
     background-color: transparent;
     padding: 0 5px;
     border: 1px solid;
@@ -211,46 +208,47 @@ const Wrapper = styled.div`
     position: relative;
     text-decoration: none;
     transition: 0.2s transform ease-in-out;
-      border-radius: 36px;
-      padding: 8px 28px;
+    border-radius: 36px;
+    padding: 8px 28px;
     will-change: transform;
     z-index: 0;
-}
+  }
 
-.black.button::after {
-  background-color: black;
-}
-.white.button::after {
-  background-color: white;
-}
-.button::after {
-  border-radius: 3rem;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-100%, 0) rotate(10deg);
-  transform-origin: top left;
-  transition: 0.2s transform ease-out;
-  will-change: transform;
-  z-index: -1;
-}
+  .black.button::after {
+    background-color: black;
+  }
+  .white.button::after {
+    background-color: white;
+  }
+  .button::after {
+    border-radius: 3rem;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
 
-.button:hover::after {
-  transform: translate(0, 0);
-}
+  .button:hover::after {
+    transform: translate(0, 0);
+  }
 
-.button:hover {
-  border: 2px solid transparent;
-  color: var(--blue);
-  transform: scale(1.05);
-  will-change: transform;
-}
-.button:hover img{
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-}
+  .button:hover {
+    border: 2px solid transparent;
+    color: var(--blue);
+    transform: scale(1.05);
+    will-change: transform;
+  }
+  .button:hover img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+      brightness(100%) contrast(100%);
+  }
 `;
 export default App;

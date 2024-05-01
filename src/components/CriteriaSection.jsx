@@ -32,7 +32,7 @@ function CriteriaSection() {
             </p>
           </div>
         </div>
-        <div className="flex-row" style={{paddingTop: '44px'}}>
+        <div className="flex-row" style={{ paddingTop: "44px" }}>
           <div className="flex-col">
             <div>
               <h1>20%</h1>

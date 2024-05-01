@@ -1,38 +1,38 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import React from "react";
+import styled from "styled-components";
 import img1 from "../assets/25.jpg";
-
 
 function ContactSection() {
   return (
-    <Wrapper id='contact'>
+    <Wrapper id="contact">
       <div className="container register">
-              <div className="text-section" >
-                <div className="register-info">
-                  <div>
-                    <div className="text-area">
-                      <h2>Let's work together</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi tincidunt aenean netus et sit. Id odio id in eu semper eu mattis tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci dolor </p>
-                    </div>
-                    <div className="flex-col">
-                      <a href="mailto:hello@bamendacommunitychallenge.com">
-                        <button className="btn white button" >
-                            Contact Us
-                          </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+        <div className="text-section">
+          <div className="register-info">
+            <div>
+              <div className="text-area">
+                <h2>Let's work together</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Quam luctus nulla
+                  morbi tincidunt aenean netus et sit. Id odio id in eu semper
+                  eu mattis tristique sit. Facilisi egestas urna sagittis sed
+                  donec. Sed orci dolor{" "}
+                </p>
               </div>
-              <div className="image-section">
+              <div className="flex-col">
+                <a href="mailto:hello@bamendacommunitychallenge.com">
+                  <button className="btn white button">Contact Us</button>
+                </a>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="image-section"></div>
+      </div>
     </Wrapper>
-  )
+  );
 }
 const Wrapper = styled.div`
-position: relative;
+  position: relative;
   margin: 100px 0;
   overflow: hidden;
   .container {
@@ -43,11 +43,8 @@ position: relative;
   .text-section {
     background-color: black; /* Replace with actual color */
     color: white;
-    /* padding: 40px; */
     flex: 0 0 50%; /*Do not grow, do not shrink, start at 50% of the parent*/
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
   }
 
   .image-section {
@@ -64,7 +61,7 @@ position: relative;
     margin-left: 64px;
     margin-right: 64px;
   }
-  .register-info p{
+  .register-info p {
     margin: 48px 0;
     font-size: 20px;
   }
@@ -78,18 +75,18 @@ position: relative;
     padding: 68px 0;
   }
   .register-info h2 {
-    font-family: 'Product Sans Black';
+    font-family: "Product Sans Black";
     font-size: 64px;
     font-weight: 700;
     line-height: 76px;
   }
-  
+
   .register-img img {
     border-radius: 0 32px 32px 0;
     width: 100%;
     height: 450px;
   }
-  
+
   button.btn {
     padding: 20px 52px;
     border: 1px solid white;
@@ -100,7 +97,7 @@ position: relative;
     background-color: transparent;
     color: white;
     padding: 0 5px;
-    border: 1px solid ;
+    border: 1px solid;
     overflow: hidden;
     position: relative;
     text-decoration: none;
@@ -108,7 +105,6 @@ position: relative;
     will-change: transform;
     z-index: 0;
     border-radius: 36px;
-      /* padding: 8px 28px; */
   }
   .button::after {
     background-color: white;
@@ -141,5 +137,5 @@ position: relative;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
       brightness(100%) contrast(100%);
   }
-`
-export default ContactSection
+`;
+export default ContactSection;

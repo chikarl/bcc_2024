@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import img1 from "../assets/logos/CITS Main Horizontal 3.svg";
 
-import Carousel from "./Carousel";
-// import { ScrollingCarousel } from '@trendyol-js/react-carousel';
-// import Item from '../utils/helper'
+import Carousel from "./Carousel"
 function Partners() {
   return (
     <Wrapper>
@@ -35,11 +33,6 @@ const Wrapper = styled.div`
   text-align: center;
   align-items: center;
   padding: 128px 0;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* .main {
-    padding: 68px 0;
-  } */
   .center{
     display: flex;
     flex-direction: column;
@@ -49,8 +42,6 @@ const Wrapper = styled.div`
   }
   .carousel-div {
     padding: 23px 0 64px 0 ;
-    /* width: calc(1530px - 161px); */
-    /* margin-left: calc((100% - 80%) / 2) !important; */
   }
   .btn-center {
     display: flex;
@@ -63,7 +54,6 @@ const Wrapper = styled.div`
     cursor: pointer;
     background-color: transparent;
     padding: 0 5px;
-    /* border: 1px solid transparent; */
     overflow: hidden;
     position: relative;
     text-decoration: none;

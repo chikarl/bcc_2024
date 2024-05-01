@@ -1,13 +1,13 @@
-import React from 'react'
-import style from 'styled-components'
+import React from "react";
+import style from "styled-components";
 
 const Loading = () => {
   return (
-    <Wrapper className='container'>
-      <div className='loading'></div>
+    <Wrapper className="container">
+      <div className="loading"></div>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = style.div`
   width: 100%;
@@ -20,7 +20,6 @@ const Wrapper = style.div`
     transform: rotate(360deg);
   }
 }
-
 .loading {
   width: 8rem;
   height: 8rem;
@@ -30,5 +29,5 @@ const Wrapper = style.div`
   border-top-color: var(--blue);
   animation: spinner 0.6s linear infinite;
 }
-`
-export default Loading
+`;
+export default Loading;

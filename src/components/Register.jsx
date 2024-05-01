@@ -125,10 +125,6 @@ const Wrapper = styled.div`
   position: relative;
   margin: 100px 0;
   height: 450px;
-  /* margin: 0 auto; */
-  /* margin-top: 4rem; */
-  /* position: relative; */
-  /* display: flex; */
   overflow: hidden;
   @font-face {
     font-family: "Product Sans Black";
@@ -138,13 +134,10 @@ const Wrapper = styled.div`
     font-family: "Product Sans Black";
     font-size: 250px;
     color: rgb(255, 255, 255, 0.1);
-    /* margin-bottom: px; */
   }
   .flex-col {
     align-items: start;
-    /* position: relative; */
     margin: 20px 0;
-    /* margin-left: 80px; */
     flex: 0 1 0;
   }
   .container {
@@ -154,14 +147,11 @@ const Wrapper = styled.div`
   }
 
   .text-section {
-    background-color: var(--blue); /* Replace with actual color */
+    background-color: var(--blue); 
     height: 450px;
     color: white;
-    /* padding: 40px; */
-    flex: 0 0 50%; /*Do not grow, do not shrink, start at 50% of the parent*/
+    flex: 0 0 50%; 
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
   }
 
   .image-section {
@@ -175,7 +165,6 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     position: relative;
-    /* margin-top:20px; */
     margin-left: 80px;
   }
   .register-info > div {
@@ -201,27 +190,16 @@ const Wrapper = styled.div`
     height: 450px;
   }
   button.btn {
-    /* background-color: transparent; */
-    /* color: white; */
     padding: 20px 52px;
-    /* border: none; */
     border: 1px solid white;
-    /* border-radius: 36px; */
-    /* font-size: 1rem; */
     margin: 20px 0 40px 0;
     font-size: 16px;
   }
-  /* a {
-    text-decoration: none;
-    color: white !important;
-    font-family: "Product Sans";
-  } */
 
   .button {
     cursor: pointer;
     background-color: transparent;
     padding: 0 5px;
-    /* color: white; */
   }
   .button {
     background-color: transparent;
@@ -276,7 +254,6 @@ const Wrapper = styled.div`
 
   .button:hover {
     border: 2px solid transparent;
-    /* color: var(--blue); */
     transform: scale(1.05);
     will-change: transform;
   }

@@ -36,8 +36,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
-  /* background-color: #F9BA04; */
-  /* color: #000; */
   font-weight: 100;
   align-items: center;
 }

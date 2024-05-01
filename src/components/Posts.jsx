@@ -6,27 +6,25 @@ import { Link } from "react-router-dom";
 import arrow from "../assets/Arrow Right.svg";
 import BlogImg from "./BlogImg";
 
-// import imgUrl from '../assets/img/img1.png'
-
 function Posts() {
   const [posts, setPosts] = useState([]);
-  const [imgUrl, setImgUrl] = useState('');
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    axios.get('https://bcc.christmastreeemporium.com/wp-json/wp/v2/posts')
-      .then(res => {
+    axios
+      .get("https://bcc.christmastreeemporium.com/wp-json/wp/v2/posts")
+      .then((res) => {
         setPosts(res.data);
         setIsLoaded(true);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
 
   if (isLoaded) {
     return (
       <Wrapper>
         <div className="container">
-        {posts.map(post => (
+          {posts.map((post) => (
             <div className="flex-row" key={post.id}>
               <div>
                 <div className="rev-col">
@@ -40,15 +38,15 @@ function Posts() {
                 </div>
               </div>
               <div className="blog-img">
-                <BlogImg  featured_media={post.featured_media} />
+                <BlogImg featured_media={post.featured_media} />
               </div>
             </div>
-        ))}
+          ))}
         </div>
       </Wrapper>
     );
   }
-  
+
   return <Loading />;
 }
 
@@ -113,7 +111,8 @@ const Wrapper = styled.div`
   }
 
   .flex-row button:hover img.arrow_icon {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+      brightness(100%) contrast(100%);
   }
 
   img.arrow_icon {
@@ -149,61 +148,3 @@ const Wrapper = styled.div`
 `;
 
 export default Posts;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useState, useEffect } from "react";
-// import BlogGrid from "./BlogGrid";
-// import axios from "axios";
-// import Loading from "./Loading";
-// import styled from "styled-components";
-
-// function Posts() {
-//   const [posts, setPosts] = useState([]);
-//   const [isLoaded, setIsLoaded] = useState(false);
-
-//   useEffect(() => {
-//     axios.get('https://bcc.christmastreeemporium.com/wp-json/wp/v2/posts')
-//       .then(res => {
-//         setPosts(res.data);
-//         setIsLoaded(true);
-//       })
-//       .catch(err => console.log(err));
-//   }, []);
-
-//   if (isLoaded) {
-//     return (
-//       <Wrapper>
-//       <div className="container">
-//         {posts.map(post => (
-//           <BlogGrid key={post.id} post={post} />
-//         ))}
-        
-//       </div>
-//       </Wrapper>
-//     );
-//   }
-  
-//   return <Loading />;
-// }
-
-// const Wrapper = styled.div`
-// .flex-row:nth-child(even) {
-//   flex-direction: row-reverse;
-// }
-// `
-// export default Posts;

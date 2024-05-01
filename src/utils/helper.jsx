@@ -10,8 +10,6 @@ import img21 from "../assets/4.jpg";
 import img31 from "../assets/20.jpg";
 import img41 from "../assets/25.jpg";
 import img51 from "../assets/27.jpg";
-// import img5 from '../assets/img/tsv.'
-
 
 import img22 from "../assets/BCC23IMG_1.png";
 import img23 from "../assets/step2.jpg";
@@ -62,7 +60,7 @@ export const timeline = [
     class_name: "timeline-item-4",
   },
 ];
-export const register =[
+export const register = [
   {
     id: 1,
     title: "Create a Team",
@@ -71,7 +69,6 @@ export const register =[
     bg_color: "#4C25EF",
     image: img22,
     arrow: arrow_white,
-
   },
   {
     id: 2,
@@ -81,7 +78,6 @@ export const register =[
     bg_color: "#F9BA04",
     image: img23,
     arrow: arrow_black,
-
   },
   {
     id: 3,
@@ -92,7 +88,7 @@ export const register =[
     image: img24,
     arrow: arrow_white,
   },
-]
+];
 export const headerImages = [
   {
     id: 1,

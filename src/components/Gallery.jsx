@@ -81,25 +81,6 @@ h2{
   font-size: 2rem;
   margin-bottom: 20px;
 }
-/* .grid_3{
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-}
-.grid_2{
-  display: grid;
-  grid-template-columns: calc(100% - 33.33%) 33.33%;
-}.grid_2_rev{
-  display: grid;
-  grid-template-columns: 33.33% calc(100% - 33.33%) ;
-}
-img{
-  width: 100%;
-  border-radius: 10px;
-}
-.grid_2 img, .grid_2_rev img, .grid_3 img{
-  padding: 0 5px;
-} */
-/* For the 3-column layout */
 .grid_3 {
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +128,6 @@ img{
 img {
   width: 100%;
   height: 100%;
-  /* border-radius: 32px; */
   object-fit: contain;
 }
 

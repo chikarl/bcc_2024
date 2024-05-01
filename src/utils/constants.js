@@ -1,1 +1,0 @@
-export const blogs =  'http://localhost:8888/.netlify/functions/blog'

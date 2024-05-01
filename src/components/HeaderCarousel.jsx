@@ -1,10 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { headerImages } from '../utils/helper';
-// import styled from 'styled-components';
-
-
-
-import styled, { keyframes } from 'styled-components';
+import React, { useState, useEffect } from "react";
+import { headerImages } from "../utils/helper";
+import styled, { keyframes } from "styled-components";
 
 // Keyframes for the slide-in effect
 const slideIn = keyframes`
@@ -25,9 +21,6 @@ const slideOut = keyframes`
     transform: translateX(-100%);
   }
 `;
-
-
-
 
 function App() {
   const [people, setPeople] = useState(headerImages);
@@ -53,27 +46,27 @@ function App() {
   }, [index]);
 
   return (
-        <Wrapper>
-        {people.map((person, personIndex) => {
-          const { id, image} = person;
+    <Wrapper>
+      {people.map((person, personIndex) => {
+        const { id, image } = person;
 
-          let position = 'nextSlide';
-          if (personIndex === index) {
-            position = 'activeSlide';
-          }
-          if (
-            personIndex === index - 1 ||
-            (index === 0 && personIndex === people.length - 1)
-          ) {
-            position = 'lastSlide';
-          }
+        let position = "nextSlide";
+        if (personIndex === index) {
+          position = "activeSlide";
+        }
+        if (
+          personIndex === index - 1 ||
+          (index === 0 && personIndex === people.length - 1)
+        ) {
+          position = "lastSlide";
+        }
 
-          return (
-            <article className={position} key={id}>
-              <img src={image} alt={id} className="person-img" />
-            </article>
-          );
-        })}
+        return (
+          <article className={position} key={id}>
+            <img src={image} alt={id} className="person-img" />
+          </article>
+        );
+      })}
     </Wrapper>
   );
 }
@@ -116,5 +109,5 @@ const Wrapper = styled.div`
   article.nextSlide {
     transform: translateX(100%);
   }
-`
+`;
 export default App;

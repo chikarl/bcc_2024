@@ -9,26 +9,33 @@ import Loading from "../components/Loading";
 function SingleBlog() {
   const { blog_id } = useParams();
   const [singlePost, setSinglePost] = useState({});
-  const [imageUrl, setImageUrl] = useState('');
-  const [author, setAuthor] = useState('');
+  const [imageUrl, setImageUrl] = useState("");
+  const [author, setAuthor] = useState("");
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    axios.get(`https://bcc.christmastreeemporium.com/wp-json/wp/v2/posts/${blog_id}`)
-      .then(res => {
+    axios
+      .get(
+        `https://bcc.christmastreeemporium.com/wp-json/wp/v2/posts/${blog_id}`
+      )
+      .then((res) => {
         setSinglePost(res.data);
         setIsLoaded(true);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, [blog_id]);
 
   useEffect(() => {
     if (!singlePost || !singlePost.featured_media || !singlePost.author) return;
-    
+
     const { featured_media, author: authorId } = singlePost;
 
-    const getImageUrl = axios.get(`https://bcc.christmastreeemporium.com/wp-json/wp/v2/media/${featured_media}`);
-    const getAuthor = axios.get(`https://bcc.christmastreeemporium.com/wp-json/wp/v2/users/${authorId}`);
+    const getImageUrl = axios.get(
+      `https://bcc.christmastreeemporium.com/wp-json/wp/v2/media/${featured_media}`
+    );
+    const getAuthor = axios.get(
+      `https://bcc.christmastreeemporium.com/wp-json/wp/v2/users/${authorId}`
+    );
 
     Promise.all([getImageUrl, getAuthor]).then(([imageUrlRes, authorRes]) => {
       setImageUrl(imageUrlRes.data.media_details.sizes.full.source_url);
@@ -36,7 +43,7 @@ function SingleBlog() {
     });
   }, [singlePost]);
 
-  if(!isLoaded) {
+  if (!isLoaded) {
     return <Loading />;
   }
 
@@ -45,8 +52,10 @@ function SingleBlog() {
   return (
     <Wrapper>
       <div>
-        <div className="blog-header" style={{ backgroundColor: singlePost?.acf?.bg_color }}>
-          <div className="container" style={{ color: singlePost?.acf?.color}}>
+        <div
+          className="blog-header"
+          style={{ backgroundColor: singlePost?.acf?.bg_color }}>
+          <div className="container" style={{ color: singlePost?.acf?.color }}>
             <BlogNavbar blog={singlePost} />
             <div className="blog-info">
               <div className="flex-row header">
@@ -72,7 +81,8 @@ function SingleBlog() {
   );
 }
 
-const Wrapper = styled.div`  .blog-header {
+const Wrapper = styled.div`
+  .blog-header {
     height: 100vh;
   }
   .blog-header .container .blog-info {
@@ -82,10 +92,10 @@ const Wrapper = styled.div`  .blog-header {
     align-items: center;
     height: 100%;
   }
-  .flex-row.header > div{
+  .flex-row.header > div {
     width: 50%;
   }
-  .flex-row img{
+  .flex-row img {
     width: 100%;
     object-fit: cover;
   }
@@ -125,6 +135,6 @@ const Wrapper = styled.div`  .blog-header {
   }
 `;
 SingleBlog.propTypes = {
-  posts: PropTypes.object.isRequired
+  posts: PropTypes.object.isRequired,
 };
 export default SingleBlog;
