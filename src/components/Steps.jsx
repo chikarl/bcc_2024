@@ -44,7 +44,6 @@ function App() {
   }, [index]);
 
   return (
-    <>
       <Wrapper className="section">
         <div className="container">
           {people.map((person, personIndex) => {
@@ -77,7 +76,6 @@ function App() {
             }
 
             return (
-              <>
                 <article className={position} key={id}>
                   <div style={divStyle} className="main">
                     <div className="bg-img">
@@ -111,12 +109,10 @@ function App() {
                     </div>
                   </div>
                 </article>
-              </>
             );
           })}
         </div>
       </Wrapper>
-    </>
   );
 }
 

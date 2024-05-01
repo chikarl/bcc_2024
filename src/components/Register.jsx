@@ -126,10 +126,6 @@ const Wrapper = styled.div`
   margin: 100px 0;
   height: 450px;
   overflow: hidden;
-  @font-face {
-    font-family: "Product Sans Black";
-    src: url(../assets/fonts/ProductSans-Black.ttf);
-  }
   span {
     font-family: "Product Sans Black";
     font-size: 250px;

@@ -16,7 +16,6 @@ function BlogImg({ featured_media }) {
       .catch((err) => console.log(err));
   }, []);
 
-  console.log(imgUrl);
   if (!isLoaded) {
     return null;
   }

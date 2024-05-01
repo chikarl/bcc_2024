@@ -36,18 +36,12 @@ function nav() {
   );
 }
 const Wrapper = styled.div`
-  @font-face {
-    font-family: "Product Sans Thin";
-    src: url(../assets/fonts/ProductSans-Thin.ttf);
-  }
   .flex-row {
-    font-family: "Product Sans Thin";
     display: flex;
     justify-content: space-between;
     padding: 20px 0px;
     background-color: #4c25ef;
     color: white;
-    font-weight: 100;
   }
 
   ul {

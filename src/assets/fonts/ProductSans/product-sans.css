@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Product Sans';
+  src: url(./ProductSans-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Product Sans Black";
+  src: url(./ProductSans-Black.ttf);
+}
+
+/* @font-face {
+  font-family: 'Product Sans Light';
+  src: url(../src/assets/fonts/ProductSans-Light.ttf);
+}
+@font-face {
+  font-family: 'Product Sans Regular';
+  src: url(../src/assets/fonts/ProductSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'Product Sans Medium';
+  src: url(../src/assets/fonts/ProductSans-Medium.ttf);
+} */

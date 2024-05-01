@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BlogNavbar from "../components/BlogNavbar";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import axios from "axios";
@@ -134,7 +134,7 @@ const Wrapper = styled.div`
     object-fit: contain;
   }
 `;
-SingleBlog.propTypes = {
-  posts: PropTypes.object.isRequired,
-};
+// SingleBlog.propTypes = {
+//   posts: PropTypes.object.isRequired,
+// };
 export default SingleBlog;

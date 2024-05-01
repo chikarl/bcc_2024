@@ -44,7 +44,6 @@ function Top3Section() {
   }, [index]);
 
   return (
-    <>
       <Wrapper className="section">
         <div className="container">
           {people.map((person, personIndex) => {
@@ -79,7 +78,6 @@ function Top3Section() {
             }
 
             return (
-              <>
                 <article className={position} key={id}>
                   <div style={divStyle} className="main flex-row">
                     <div className="container">
@@ -131,12 +129,10 @@ function Top3Section() {
                     </div>
                   </div>
                 </article>
-              </>
             );
           })}
         </div>
       </Wrapper>
-    </>
   );
 }
 
