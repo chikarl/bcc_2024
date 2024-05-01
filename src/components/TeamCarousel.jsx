@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { winners2022top8 } from "../utils/winners";
 import styled, { keyframes } from "styled-components";
 import img1 from "../assets/BCC23IMG_1.png";
-import arrow from "../assets/Add.svg";
+import arrow from "../assets/Arrow Right.svg";
 // import arrow from "../assets/ArrowWhite.svg";
 
 const slideIn = keyframes`
@@ -39,23 +39,26 @@ function TeamCarousel() {
     }
   }, [index, people]);
 
-  useEffect(() => {
-    let slider = setInterval(() => {
-      setIndex(index + 1);
-    }, 10000);
-    return () => {
-      clearInterval(slider);
-    };
-  }, [index]);
+  // useEffect(() => {
+  //   let slider = setInterval(() => {
+  //     setIndex(index + 1);
+  //   }, 10000);
+  //   return () => {
+  //     clearInterval(slider);
+  //   };
+  // }, [index]);
 
   return (
     <Wrapper>
-      <div className="container"> <h2>Our Top 10 teams</h2></div>
+      <div className="container">
+        {" "}
+        <h2 className="title">Our Top 10 teams 2024</h2>
+      </div>
       {people.map((person, personIndex) => {
-        const { id, title, members,description, iframe_src, color } = person;
+        const { id, title, members, description, iframe_src, color } = person;
 
         const divColor = {
-          borderColor: color,
+          backgroundColor: color,
         };
         let position = "nextSlide";
         if (personIndex === index) {
@@ -70,32 +73,34 @@ function TeamCarousel() {
         return (
           <article className={position} key={id}>
             <div className="container">
-              <div className="flex-row" key={id} style={divColor}>
-              <div>
-                <h3>{title}</h3>
-                <h5>{members.map((member, index) =>(
-                  <span key={index}>{member}, </span>
-                ))}</h5>
-                <p>{description}</p>
+              <div className="flex-row" style={divColor}>
                 <div>
-                  <button
-                          className="btn-arrow white button"
-                          onClick={() => setIndex(index + 1)}>
-                          <img src={arrow} alt="" />
-                        </button>
+                  <h3>{title}</h3>
+                  <h5>
+                    {members.map((member, index) => (
+                      <span key={index}>{member}, </span>
+                    ))}
+                  </h5>
+                  <p>{description}</p>
+                  <div>
+                    <button
+                      className="btn-arrow black button"
+                      onClick={() => setIndex(index + 1)}>
+                      <img src={arrow} alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src={iframe_src}
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 </div>
               </div>
-              <div>
-                <iframe
-                  width="560"
-                  height="315"
-                  src={iframe_src}
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
             </div>
           </article>
         );
@@ -107,87 +112,14 @@ const Wrapper = styled.div`
   position: relative;
   margin: 100px 0;
   height: 450px;
-  /* margin: 0 auto; */
-  /* margin-top: 4rem; */
-  /* position: relative; */
-  /* display: flex; */
   overflow: hidden;
-  @font-face {
-    font-family: "Product Sans Black";
-    src: url(../assets/fonts/ProductSans-Black.ttf);
-  }
-  span {
-    font-family: "Product Sans Black";
-    font-size: 250px;
-    color: rgb(255, 255, 255, 0.1);
-    /* margin-bottom: px; */
-  }
-  .flex-col {
-    align-items: start;
-    /* position: relative; */
-    margin: 20px 0;
-    /* margin-left: 80px; */
-    flex: 0 1 0;
-  }
-  .container {
-    display: flex;
-    overflow: hidden;
-    border-radius: 48px;
-  }
-
-  .text-section {
-    background-color: var(--blue); /* Replace with actual color */
-    height: 450px;
-    color: white;
-    /* padding: 40px; */
-    flex: 0 0 50%; /*Do not grow, do not shrink, start at 50% of the parent*/
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
-  }
-
-  .image-section {
-    flex: 0 0 50%;
-    background-image: url(${img1});
-    background-size: cover;
-    background-position: center;
-  }
-
-  .register-info {
-    display: flex;
-    align-items: center;
-    position: relative;
-    /* margin-top:20px; */
-    margin-left: 80px;
-  }
-  
-  button.btn {
-    /* background-color: transparent; */
-    /* color: white; */
-    padding: 20px 52px;
-    /* border: none; */
-    border: 1px solid white;
-    /* border-radius: 36px; */
-    /* font-size: 1rem; */
-    margin: 20px 0 40px 0;
-    font-size: 16px;
-  }
-  /* a {
-    text-decoration: none;
-    color: white !important;
-    font-family: "Product Sans";
-  } */
-
-  .button {
-    cursor: pointer;
-    background-color: transparent;
-    padding: 0 5px;
-    /* color: white; */
+  article {
+    padding-top: 100px;
   }
   .button {
     background-color: transparent;
     padding: 0 5px;
-    border: 1px solid ;
+    border: 1px solid black;
     overflow: hidden;
     position: relative;
     text-decoration: none;
@@ -195,26 +127,9 @@ const Wrapper = styled.div`
     will-change: transform;
     z-index: 0;
     border-radius: 36px;
-      padding: 8px 28px;
+    padding: 8px 28px;
   }
-  .black.button::after {
-    background-color: black;
-  }
-  .black.button {
-    color: black;
-  }
-  .black.button:hover {
-    color: white;
-  }
-  .white.button::after {
-    background-color: white;
-  }
-  .white.button:hover {
-    color: black;
-  }
-  .white.button {
-    color: white;
-  }
+
   .button::after {
     border-radius: 3rem;
     content: "";
@@ -233,11 +148,12 @@ const Wrapper = styled.div`
 
   .button:hover::after {
     transform: translate(0, 0);
+    background-color: black;
   }
 
   .button:hover {
     border: 2px solid transparent;
-    /* color: var(--blue); */
+    color: var(--blue);
     transform: scale(1.05);
     will-change: transform;
   }
@@ -252,7 +168,7 @@ const Wrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    /* opacity: 0; */
     transition: var(--transition);
   }
   article.activeSlide {
@@ -268,6 +184,33 @@ const Wrapper = styled.div`
 
   article.nextSlide {
     transform: translateX(100%);
+  }
+  .flex-row {
+    padding: 20px;
+    background-color: #e8f2ff;
+    color: #000;
+    align-items: center;
+    border-radius: 48px;
+    gap: 20px;
+  }
+  .flex-row > div {
+    width: 50%;
+  }
+  p {
+    padding-bottom: 10px;
+  }
+  h3 {
+    font-family: "Product Sans Black";
+    font-size: 48px;
+    line-height: 40px;
+  }
+  h5 {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  iframe {
+    border-radius: 32px;
+    width: 100%;
   }
 `;
 

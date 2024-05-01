@@ -14,8 +14,8 @@ import img51 from "../assets/27.jpg";
 
 
 import img22 from "../assets/BCC23IMG_1.png";
-import img23 from "../assets/17.jpg";
-import img24 from "../assets/12.jpg";
+import img23 from "../assets/step2.jpg";
+import img24 from "../assets/step3.jpg";
 
 import arrow_black from "../assets/Arrow Right.svg";
 import arrow_white from "../assets/ArrowWhite.svg";
@@ -44,7 +44,7 @@ export const timeline = [
   {
     id: 3,
     title: "Top 10 Teams Announced",
-    data: "April 30",
+    data: "May 05",
     arrow: arrow_black,
     color: "black",
     bg_color: "#00A8FF",
@@ -54,7 +54,7 @@ export const timeline = [
   {
     id: 4,
     title: "BCC Demo Day",
-    data: "June 2024",
+    data: "June 08",
     arrow: arrow_white,
     color: "white",
     bg_color: "#4C25EF",

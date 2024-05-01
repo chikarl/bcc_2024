@@ -1,8 +1,8 @@
 import React from "react";
 
-import blog1 from "../assets/27.jpg";
-import blog2 from "../assets/blog2.png";
-import blog3 from "../assets/blog3.png";
+import blog1 from "../assets/teams/w1.jpg";
+import blog2 from "../assets/teams/w2.jpg";
+import blog3 from "../assets/teams/w3.jpg";
 import arrow_black from "../assets/Arrow Right.svg";
 import arrow_white from "../assets/ArrowWhite.svg";
 

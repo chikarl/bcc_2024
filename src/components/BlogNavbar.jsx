@@ -17,7 +17,7 @@ const BlogNavbar = ({ blog }) => {
       <div className='flex-row'>
         <div>
           <Link to='/' className='logo'> 
-            {logo_color === 'black' ? <img src={logoBlack} alt="" /> : <img src={logoWhite} alt="" />}
+            {logo_color === '#000000' ? <img src={logoBlack} alt="" /> : <img src={logoWhite} alt="" />}
           </Link>
         </div>
         <div>

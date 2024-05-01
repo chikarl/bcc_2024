@@ -6,7 +6,7 @@ import img1 from "../assets/25.jpg";
 
 function ContactSection() {
   return (
-    <Wrapper>
+    <Wrapper id='contact'>
       <div className="container register">
               <div className="text-section" >
                 <div className="register-info">

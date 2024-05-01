@@ -16,9 +16,10 @@ function nav() {
       <div>
         <ul>
           <li><a href="#">TImeline</a></li>
-          <li><a href="#">Prizes</a></li>
-          <li><Link to='/blog'>Blog</Link></li>
           <li><Link to='/winners'>Winners</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><Link to='/blog'>Blog</Link></li>
+          <li><a href='#contact'>Contact</a></li>
         </ul>
       </div>
       </div>

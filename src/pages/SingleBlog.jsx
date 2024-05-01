@@ -85,6 +85,10 @@ const Wrapper = styled.div`  .blog-header {
   .flex-row.header > div{
     width: 50%;
   }
+  .flex-row img{
+    width: 100%;
+    object-fit: cover;
+  }
   h2 {
     font-size: 72px;
     font-weight: 600;
