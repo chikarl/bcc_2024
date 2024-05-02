@@ -45,14 +45,24 @@ const Wrapper = styled.div`
   scroll-snap-align: start;
   border-radius: 24px;
   padding: 32px;
-  max-height: 193px;
-  min-width: 404px;
+  /* max-height: 193px; */
+  /* min-width: 404px; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.card svg{
-  height: 128px;
-}
+.card img {
+    height: 100%;
+    width: 100%;
+  }
+      @media only screen and (max-width: 1024px) {
+      .card{
+        padding: 16px 32px;
+        width: 300px;
+      }
+      .carrousel{
+        margin: 0 20px ;
+      }
+    }
 `
 export default Carousel;

@@ -12,7 +12,7 @@ function FooterSection() {
         <div className="flex-row">
           <div>
             <Link to="/">
-              <img src={logo} alt="" />
+              <img src={logo} alt="BCC" />
             </Link>
           </div>
           <div>
@@ -55,7 +55,7 @@ function FooterSection() {
         <div className="flex-row flex-bottom">
           <div>
             <Link to="https://cits.cm/" target="_blank">
-              <img src={sponsor} alt="" />
+              <img src={sponsor} alt="CIT" />
             </Link>
           </div>
           <div>
@@ -173,6 +173,28 @@ const Wrapper = styled.section`
   .footer_btn:hover img {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
       brightness(100%) contrast(100%);
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    ul.flex-row{
+      flex-wrap: wrap;
+      padding: 0 20px;
+      justify-content: end;
+    }
+    ul.flex-row a{
+      font-size: 14px;
+    }
+    .flex-row{
+      align-items: center;
+    }
+    a img{
+      width: 200px;
+      padding: 20px 0;
+    }
+    .container > div{
+      padding: 0;
+    }
   }
 `;
 export default FooterSection;

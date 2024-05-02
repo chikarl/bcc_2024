@@ -85,5 +85,26 @@ const Wrapper = styled.div`
     /* padding-top: 48px; */
     line-height: 76.8px;
   }
+    @media only screen and (max-width: 1024px) {
+    .flex-row {
+      flex-direction: column;
+    }
+    .flex-row > div {
+      width: 100%;
+    }
+    .flex-row h1{
+      font-size: 150px;
+      /* line-height: 100px; */
+      margin: 0;
+    }
+    h3{
+      font-size: 46px;
+      line-height: 60px;
+    }
+    h2{
+      margin-bottom: 20px;
+
+    }
+  }
 `;
 export default CriteriaSection;

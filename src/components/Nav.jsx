@@ -1,21 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function nav() {
+function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <Wrapper>
       <div className="flex-row">
         <div>
           <div className="logo">
-            <img src={logo} alt="" />
+            <img src={logo} alt="Logo" />
           </div>
         </div>
-        <div>
-          <ul>
+        <div className="menu">
+          <h1 icon="fa-solid fa-bars" className="hamburger" onClick={toggleMenu} > Bars </h1>
+          <ul className={isOpen ? "active" : ""}>
             <li>
-              <a href="#">TImeline</a>
+              <a href="#">Timeline</a>
             </li>
             <li>
               <Link to="/winners">Winners</Link>
@@ -35,37 +43,73 @@ function nav() {
     </Wrapper>
   );
 }
+
 const Wrapper = styled.div`
   .flex-row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0px;
     background-color: #4c25ef;
     color: white;
   }
 
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
   ul {
     display: flex;
-    justify-content: space-between;
     list-style: none;
     padding: 0;
   }
+
   li {
     margin: 0 10px;
     padding: 0;
   }
+
   li a {
     color: white;
     text-decoration: none;
     font-size: 14px;
   }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
   @media only screen and (max-width: 1024px) {
-    .logo {
-      height: 100px;
+    .menu {
+      position: relative;
     }
-    .logo img {
-      height: 100%;
+
+    ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #4c25ef;
+      padding: 10px;
+      width: 100%;
+    }
+
+    ul.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: block;
+    }
+    img{
+      width: 250px;
     }
   }
 `;
-export default nav;
+
+export default Nav;

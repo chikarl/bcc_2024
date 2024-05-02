@@ -79,5 +79,15 @@ const Wrapper = styled.div`
     align-self: center;
     min-width: 2rem;
   }
+    @media only screen and (max-width: 1024px) {
+    .question h4 {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    .question{
+      padding: 6px 0;
+
+    }
+  }
 `;
 export default Question;

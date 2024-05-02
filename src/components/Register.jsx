@@ -141,8 +141,9 @@ const Wrapper = styled.div`
     overflow: hidden;
     border-radius: 48px;
   }
-
+  
   .text-section {
+    border-radius: 48px 0 0 48px;
     background-color: var(--blue); 
     height: 450px;
     color: white;
@@ -280,6 +281,22 @@ const Wrapper = styled.div`
 
   article.nextSlide {
     transform: translateX(100%);
+  }
+    @media only screen and (max-width: 1024px) {
+      .image-section{
+        display: none;
+      }
+    .container.register {
+      flex-direction: column;
+
+    }
+    .register-info {
+      margin: 0 24px ;
+      padding: 24px 0;
+    }
+    .text-section {
+      border-radius: 48px;
+    }
   }
 `;
 

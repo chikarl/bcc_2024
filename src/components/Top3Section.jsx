@@ -260,5 +260,26 @@ const Wrapper = styled.div`
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
       brightness(100%) contrast(100%);
   }
+  @media only screen and (max-width: 1024px) {
+    h1 {
+      font-size: 64px;
+      line-height: 70px;
+      padding: 15px 0 10px 0;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      padding-bottom: 20px;
+    }
+    .container .winners {
+      width: 100%;
+      padding-bottom: 50px;
+    }
+    .button {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+  }
 `;
 export default Top3Section;

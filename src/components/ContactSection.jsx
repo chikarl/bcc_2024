@@ -41,6 +41,7 @@ const Wrapper = styled.div`
     border-radius: 48px;
   }
   .text-section {
+    border-radius: 48px 0 0 48px;
     background-color: black; /* Replace with actual color */
     color: white;
     flex: 0 0 50%; /*Do not grow, do not shrink, start at 50% of the parent*/
@@ -136,6 +137,22 @@ const Wrapper = styled.div`
   .button:hover img {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
       brightness(100%) contrast(100%);
+  }
+    @media only screen and (max-width: 1024px) {
+      .image-section{
+        display: none;
+      }
+    .container.register {
+      flex-direction: column;
+    /* border-radius: 0px; */
+    }
+    .register-info {
+      margin: 0 24px ;
+      padding: 24px 0;
+    }
+    .text-section {
+      border-radius: 48px;
+    }
   }
 `;
 export default ContactSection;

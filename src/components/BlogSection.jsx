@@ -25,7 +25,7 @@ function BlogSection() {
         <div className="container">
           <h2>Blog</h2>
         {posts.slice(0, 3).map(post => (
-            <div className="flex-row" key={post.id}>
+            <div className="flex-row post" key={post.id}>
               <div>
                 <div className="rev-col">
                   <h3>{post.title.rendered}</h3>
@@ -198,5 +198,26 @@ const Wrapper = styled.div`
     transform: scale(1.05);
     will-change: transform;
   }
+    @media only screen and (max-width: 1024px) {
+    .flex-row {
+      flex-direction: column-reverse;
+    }
+    .flex-row > div {
+    width: 100%;
+  }
+  .flex-row:nth-child(odd) .rev-col {
+    margin-left: 0px;
+  }
+  .flex-row:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  h3{
+    font-size: 28px;
+    margin: 0 0 10px 0;
+  }
+  button{
+    margin-bottom: 20px;
+  }
+}
 `;
 export default BlogSection;

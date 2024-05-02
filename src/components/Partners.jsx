@@ -105,8 +105,14 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
   }
-  .card svg {
-    height: 128px;
+  .card img {
+    height: 100%;
   }
+      @media only screen and (max-width: 1024px) {
+      .card{
+        padding: 16px;
+        width: 350px;
+      }
+    }
 `;
 export default Partners;

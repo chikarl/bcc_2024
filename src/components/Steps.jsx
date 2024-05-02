@@ -79,7 +79,7 @@ function App() {
                 <article className={position} key={id}>
                   <div style={divStyle} className="main">
                     <div className="bg-img">
-                      <div>
+                      <div className="bg-im">
                         <img src={bg_image} alt="" className="test-bg" />
                       </div>
                       <div className="container timeline">
@@ -246,5 +246,15 @@ const Wrapper = styled.div`
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
       brightness(100%) contrast(100%);
   }
+      @media only screen and (max-width: 1024px) {
+      .test-bg{
+        display: none;
+      }
+      .timeline-item-4{
+        width: inherit;
+        display: inherit;
+      }
+    }
+
 `;
 export default App;
