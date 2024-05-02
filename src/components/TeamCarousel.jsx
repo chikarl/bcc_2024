@@ -199,7 +199,7 @@ const Wrapper = styled.div`
     border-radius: 32px;
     width: 100%;
   }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 425px) {
       height: 770px;
       .flex-row{
         flex-direction: column-reverse;

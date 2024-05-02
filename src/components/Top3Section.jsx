@@ -260,7 +260,9 @@ const Wrapper = styled.div`
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
       brightness(100%) contrast(100%);
   }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 425px) {
+    
+  height: 80vh;
     h1 {
       font-size: 64px;
       line-height: 70px;

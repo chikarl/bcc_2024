@@ -282,7 +282,7 @@ const Wrapper = styled.div`
   article.nextSlide {
     transform: translateX(100%);
   }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 425px) {
       .image-section{
         display: none;
       }

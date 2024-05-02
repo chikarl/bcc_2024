@@ -83,7 +83,7 @@ const Wrapper = styled.div`
     margin-right: 20px;
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 425px) {
     .menu {
       position: relative;
     }
@@ -107,7 +107,7 @@ const Wrapper = styled.div`
       display: block;
     }
     img{
-      width: 250px;
+      width: 350px;
     }
   }
 `;

@@ -55,7 +55,7 @@ const Wrapper = styled.div`
     height: 100%;
     width: 100%;
   }
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: 425px) {
       .card{
         padding: 16px 32px;
         width: 300px;
