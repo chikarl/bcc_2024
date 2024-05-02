@@ -284,7 +284,7 @@ const Wrapper = styled.div`
     }
   }
   @media only screen and (max-width: 425px) {
-  height: 80%;
+  height: 80vh;
 }
 `;
 export default Top3Section;
