@@ -63,5 +63,13 @@ const Wrapper = styled.div`
     border-radius: 32px;
     width: 100%;
   }
+  @media only screen and (max-width: 1024px) {
+      .flex-row{
+        flex-direction: column-reverse;
+      }
+      .flex-row > div{
+        width: 100%;
+      }
+    }
 `;
 export default TeamListView;

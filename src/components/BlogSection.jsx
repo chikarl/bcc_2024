@@ -213,10 +213,10 @@ const Wrapper = styled.div`
   }
   h3{
     font-size: 28px;
-    margin: 0 0 10px 0;
+    margin: 10px 0 10px 0;
   }
   button{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 `;

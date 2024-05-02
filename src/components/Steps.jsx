@@ -250,7 +250,10 @@ const Wrapper = styled.div`
   }
     }
     @media only screen and (max-width: 1024px) {
-  height: 614px;
+  height: 700px;
+      .timeline h1{
+        line-height: 70px;
+      }
       .test-bg{
         display: none;
       }

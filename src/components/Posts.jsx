@@ -145,6 +145,27 @@ const Wrapper = styled.div`
     object-position: center;
     border-radius: 32px;
   }
+    @media only screen and (max-width: 425px) {
+    .flex-row {
+      flex-direction: column-reverse;
+    }
+    .flex-row > div {
+    width: 100%;
+  }
+  .flex-row:nth-child(even) .rev-col {
+    margin-left: 0px;
+  }
+  .flex-row:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  h3{
+    font-size: 28px;
+    margin: 10px 0 10px 0;
+  }
+  button{
+    margin-bottom: 30px;
+  }
+}
 `;
 
 export default Posts;
