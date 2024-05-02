@@ -130,13 +130,6 @@ const Wrapper = styled.div`
     object-fit: contain;
     object-position: center;
   }
-  .timeline-item-4 {
-    margin: 0 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 300px;
-  }
   .btn-arrow {
     z-index: 100px;
     cursor: pointer;
@@ -246,13 +239,30 @@ const Wrapper = styled.div`
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
       brightness(100%) contrast(100%);
   }
-      @media only screen and (max-width: 425px) {
+    @media only screen and (min-width: 1024px) {
+      
+  .timeline-item-4 {
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+  }
+    }
+    @media only screen and (max-width: 1024px) {
+  height: 614px;
       .test-bg{
         display: none;
       }
-      .timeline-item-4{
-        width: inherit;
-        display: inherit;
+      .bg-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .timeline h4{
+        padding: 0;
       }
     }
 

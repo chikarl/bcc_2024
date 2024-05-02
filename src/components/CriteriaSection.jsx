@@ -85,7 +85,7 @@ const Wrapper = styled.div`
     /* padding-top: 48px; */
     line-height: 76.8px;
   }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 1024px) {
     .flex-row {
       flex-direction: column;
     }
