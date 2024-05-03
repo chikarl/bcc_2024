@@ -68,6 +68,15 @@ li a{
   }
   .logo img {
     height: 100%;
-  }}
+  }
+}
+@media only screen and  (max-width: 1024px) {
+  h1{
+    font-size: 48px;
+    line-height: 50px;
+    width: 100%;
+  /* margin: 50px 0 10px 0; */
+  }
+ }
 `
 export default PageHero

@@ -1,7 +1,7 @@
 import React from "react";
 import blog1 from "../assets/teams/w1.jpg";
-import blog2 from "../assets/teams/w2.jpg";
-import blog3 from "../assets/teams/w3.jpg";
+import blog2 from "../assets/teams/w3.jpg";
+import blog3 from "../assets/teams/w2.jpg";
 import arrow_black from "../assets/Arrow Right.svg";
 import arrow_white from "../assets/ArrowWhite.svg";
 
@@ -105,5 +105,64 @@ export const winners2022top8 = [
     "members": ["Fonguong Edrick Nchombonui", "Wunjah Alvine Teikam", "Foryoung Junior Ngu Taniform", "Nyuydine Bill Leynyuy"],
     description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem tenetur consequuntur delectus rerum iste facilis, quibusdam beatae deserunt pariatur non velit saepe nesciunt alias consequatur officiis quo impedit? Iusto.',
     color: '#E8F2FF'
+  }
+]
+
+export const winners2023top8 = [
+  {
+    id:1,
+    "title": "EchoVision",
+    "iframe_src": "https://www.youtube.com/embed/TNBmx6vGc7o",
+    "members": ["Ndongmo Christian", "Fomonyuy Fritz", "Ngum Butlar", "Chia Raissa Fien"],
+    color: '#E8F2FF'
+  },
+  {
+    id:2,
+    "title": "Guardians of the ozone",
+    "iframe_src": "https://www.youtube.com/embed/Q0nQEP0zK5g",
+    "members": ["Bora Faith", "Lukong Charlotte", "Manka Zoe"],
+    color: '#FFEDEA'
+  },
+  {
+    id:3,
+    "title": "Intern",
+    "iframe_src": "https://www.youtube.com/embed/Jda3jIPGacI",
+    "members": ["Mofiro Jean", "Shenyuy Goodness", "Akumbom Wesley", "Neba Desmond"],
+    color: '#F3EEFF'
+  },
+  {
+    id:4,
+    "title": "V-laboratory",
+    "iframe_src": "https://www.youtube.com/embed/kbIAk2IjcE8",
+    "members": ["Mbah Lesky", "Jik Alvin", "Ngong Marcel", "Fien Dora"],
+    color: '#E8F2FF'
+  },
+  {
+    id:5,
+    "title": "WalletMate",
+    "iframe_src": "https://www.youtube.com/embed/c95V0MsdctI",
+    "members": ["Nde Ebom Kaji", "Buma Emmanuel", "Fogwe Prosper", "Kinyuy Kell"],
+    color: '#E8F2FF'
+  },
+  {
+    id:6,
+    "title": "Matazm",
+    "iframe_src": "https://www.youtube.com/embed/ywXyCw9xVFs",
+    "members": ["Tim Paul Junior", "Akwo Thomas", "Budi Hitler"],
+    color: '#E8F2FF'
+  },
+  {
+    id:7,
+    "title": "iSend",
+    "iframe_src": "https://www.youtube.com/embed/BZq2WlUq5q4",
+    "members": ["Tita Tera Tekwe", "Lamfu Marie-Claire", "Wanka Dominique"],
+    color: '#E8F2FF'
+  },
+  {
+    id:8,
+    "title": "Health Ease",
+    "iframe_src": "https://www.youtube.com/embed/etsJQieHEyw",
+    "members": ["Fonguong Edrick Nchombonui", "Wunjah Alvine Teikam", "Foryoung Junior Ngu Taniform", "Nyuydine Bill Leynyuy"],
+    Scolor: '#E8F2FF'
   }
 ]
