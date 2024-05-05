@@ -204,10 +204,13 @@ const Wrapper = styled.div`
     width: 100%;
   }
     @media only screen and (max-width: 1024px) {
-      height: 1024px;
+      height: 1030px;
       .flex-row{
         flex-direction: column-reverse;
-        height: 100%;
+        height: 915px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
       }
       .flex-row > div{
         width: 100%;
