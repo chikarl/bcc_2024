@@ -12,10 +12,11 @@ function ContactSection() {
               <div className="text-area">
                 <h2>Let's work together</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Quam luctus nulla
-                  morbi tincidunt aenean netus et sit. Id odio id in eu semper
-                  eu mattis tristique sit. Facilisi egestas urna sagittis sed
-                  donec. Sed orci dolor{" "}
+                  The Bamenda Community Challenge is more than just a
+                  competition - it's a call to action for passionate individuals
+                  and organizations to come together and tackle the challenges
+                  facing our community. We believe in the power of collaboration
+                  to create real and lasting change.
                 </p>
               </div>
               <div className="flex-col">
@@ -138,16 +139,16 @@ const Wrapper = styled.div`
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
       brightness(100%) contrast(100%);
   }
-    @media only screen and (max-width: 1024px) {
-      .image-section{
-        display: none;
-      }
+  @media only screen and (max-width: 1024px) {
+    .image-section {
+      display: none;
+    }
     .container.register {
       flex-direction: column;
-    /* border-radius: 0px; */
+      /* border-radius: 0px; */
     }
     .register-info {
-      margin: 0 24px ;
+      margin: 0 24px;
       padding: 24px 0;
     }
     .text-section {

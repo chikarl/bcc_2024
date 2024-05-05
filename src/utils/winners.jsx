@@ -5,6 +5,134 @@ import blog3 from "../assets/teams/w2.jpg";
 import arrow_black from "../assets/Arrow Right.svg";
 import arrow_white from "../assets/ArrowWhite.svg";
 
+
+export const  winners2024top10 = [
+  {
+    "id": 1,
+    "title": "Task Finder Application (ServiceLink)",
+    "iframe_src": "",
+    "members": [
+      "YUH RANDY AFUMBOM",
+      "IMPAH FRITZ AKAM",
+      "MBOGWE EMELDA FENUI",
+      "YUH RANDY AFUMBOM"
+    ],
+    "description": "The Task Finder Application is a mobile app that aims to simplify task management by connecting users with task providers efficiently.",
+    "color": "#E8F2FF"
+  },
+  {
+    "id": 2,
+    "title": "Alone",
+    "iframe_src": "",
+    "members": [
+      "Balon leslie",
+      "Embom Jemima"
+    ],
+    "description": "The emotional consolation platform is an innovative solution designed to address the increasing need for emotional support in today's fast-paced and digitally connected world. With the rise of social media and the prevalence of mental health challenges, individuals often face emotional distress and isolation. Recognizing the significance of emotional well-being, this study aims to explore the effectiveness and impact of an online emotional consolation platform. By providing a secure and accessible space for individuals to seek emotional support, share experiences, and receive empathetic guidance, this platform seeks to bridge the gap between those in need and the availability of emotional support services. The study aims to examine the potential benefits of such a platform in terms of enhancing emotional well-being, reducing feelings of isolation, and fostering a sense of community and connection.",
+    "color": "#E8F2FF"
+  },
+  {
+    "id": 3,
+    "title": "Automatic bills calculations system",
+    "iframe_src": "",
+    "members": [
+      "Ronald Yika",
+      "Perfung Eugine",
+      "SAHKA GATIENNE"
+    ],
+    "description": "The project automatic bills calculations system is designed for retail store owners. Most store owner turn to have books in which they write down each product they sell to help them keep track of how their business is going this is a manual process and another Challenge they face is error due to poor calculation of a sells person who isn't that good in maths is left in the store he may do some poor calculation which can hinder the stores profits or creat losses to the store. The objective of this project is to replace the concept of store owner writing down each product they sell with a digital database.",
+    "color": "#E8F2FF"
+  },
+  {
+    "id": 4,
+    "title": "SafeHaven",
+    "iframe_src": "https://www.youtube.com/embed/2OtEm3qSmzQ?si=rqHv1gXcCxLODz5x",
+    "members": [
+      "Ndeh Titacho",
+      "Ndipisiri Blessing",
+      "Forku Brandon",
+      "Nsalar Lydiana Malah"
+    ],
+    "description": "This is a project with an application (website) where people especially females can report sexual violence and domestic violence or any gender based violence to higher authorities (anonymously or not) like Plan international Cameroon and seek case follow ups.",
+    "color": "#E8F2FF"
+  },
+  {
+    "id": 5,
+    "title": "Contritok",
+    "iframe_src": "",
+    "members": [
+      "Tita Akweshi Maite Lorella",
+      "Awankem Benjamin",
+      "Ngwa Juthel"
+    ],
+    "description": "ContriTok Learning App is a mobile application specifically developed to assist individuals, both within and outside of Bamenda and Cameroon, in learning and speaking their mother tongues. The app offers an interactive and gamified experience to engage users and promote language acquisition. The primary objective of the app is to address the challenge faced by many children in urban areas of Cameroon who may lack exposure to their native languages. By doing so, the app aims to facilitate the stress people go through to learn their native languages, disgrace, language preservation and cultural heritage.",
+    "color": "#E8F2FF"
+  },
+  {
+    "id": 6,
+    "title": "FindHome",
+    "iframe_src": "https://www.youtube.com/embed/sBMQ93evByE?si=m-6QZvPm08d9a6Yd",
+    "members": [
+      "Buhnyuy Ronald Yika",
+      "Djou Kenne Belviane Manuelle",
+      "Fondzenyuy Cecilia Berinyuy",
+      "TANYU BRANDON"
+    ],
+    "description": "FindHome is a comprehensive cross-platform application designed to streamline the process of finding and booking accommodations. Whether you're seeking a cozy hostel, a spacious house, a luxurious hotel, or a charming guest house, FindHome offers a vast selection to meet your needs.",
+    "color": "#E8F2FF"
+  },
+  {
+    "id": 7,
+    "title": "Agro mate",
+    "iframe_src": "https://www.youtube.com/embed/wogEsGsGZ1Y?si=A8Mq9Y4UwOL_az-P",
+    "members": [
+      "Ghany Elisha",
+      "Chia Raissa",
+      "Mary Makuchi"
+    ],
+    "description": "Develop Agromate, a user-friendly mobile application that revolutionizes the agricultural product market by connecting farmers directly with consumers. By eliminating intermediaries, Agromate reduces costs for consumers and increases revenue for farmers. The platform expands market reach for farmers and offers convenient delivery options while ensuring transparency and traceability of products. The goal is to create a centralized, multivendor e-commerce platform that bridges the gap between farmers and consumers, providing affordable prices and a seamless purchasing experience.",
+    "color": "#E8F2FF"
+  },
+  {
+    "id": 8,
+    "title": "Orient",
+    "iframe_src": "https://www.youtube.com/embed/uM6fa-o6GY4?si=7UcLh0ZCH468JvDR",
+    "members": [
+      "Anye Prince Kelly",
+      "Nkimih Awembom Albert",
+      "Bih Ascension"
+    ],
+    "description": "The goal of Orient is to assist students in making informed decisions about their career paths before entering university by providing personalized career recommendations based on their interests, skills, and preferences.",
+    "color": "#E8F2FF"
+  },
+  {
+    "id": 9,
+    "title": "BOLO",
+    "iframe_src": "",
+    "members": [
+      "Fotso Tachula Eddy-Steve",
+      "Yuh Randy",
+      "Ngwa Frank",
+      "Lanso James"
+    ],
+    "description": "BOLO, is a website designed to help people in the Bamenda community find local jobs easily. It aims to solve the problem of people struggling to find job opportunities nearby and also recruiters facing difficulty in getting the right person for the job or even getting one at all, by providing a convenient online platform.",
+    "color": "#E8F2FF"
+  },
+  {
+    "id": 10,
+    "title": "GovEase",
+    "iframe_src": "",
+    "members": [
+      "Ndifoin Hilary Nkaise",
+      "Samual Penn",
+      "Emmanual Delonie",
+      "Ndifoin Hilary"
+    ],
+    "description": "Many residents in Bamenda, Cameroon, face challenges accessing, understand eligibility and procedures, and navigating government services due to a lack of centralized information, complex eligibility requirements, and bureaucratic hurdles. This project aims to develop a web-based platform that addresses these issues and revolutionizes access to government services for the community.",
+    "color": "#E8F2FF"
+  }
+]
+
 export const winners2023 = [
   {
     id: 1,

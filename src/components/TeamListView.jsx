@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { winners2022top8 } from "../utils/winners";
+import { winners2024top10 } from "../utils/winners";
 
 function TeamListView() {
   return (
     <Wrapper>
       {/* <h2>Meet Our Top 10 Teams</h2> */}
       <div>
-        {winners2022top8.map((team, index) => {
+        {winners2024top10.map((team, index) => {
           const { id, title, members, description, iframe_src, color } = team;
           const divColor = { backgroundColor: color };
           return (

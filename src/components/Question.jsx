@@ -24,7 +24,7 @@ const Question = ({ title, info }) => {
             </div>
           )}
         </header>
-        {showInfo && <p>{info}</p>}
+        {showInfo && <p  dangerouslySetInnerHTML={{ __html: info }} />}
       </article>
     </Wrapper>
   );
@@ -53,6 +53,9 @@ const Wrapper = styled.div`
     color: var(--clr-grey-3);
     margin-bottom: 0;
     margin-top: 0.5rem;
+  }
+  .question p ul{
+    padding-left: 20px;
   }
   .question header {
     display: flex;

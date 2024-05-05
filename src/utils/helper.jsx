@@ -116,26 +116,40 @@ export const question = [
   {
     id: 1,
     title: "Do I have to allow the use of cookies?",
-    info: "Organized by the Bamenda Tech Community, the challenge is open to individuals and teams who have innovative ideas and projects that address important social, economic, and environmental challenges facing the community. Participants are encouraged to submit projects that leverage technology to create solutions that have a positive impact on the community <br /> The Bamenda Community Challenge provides an excellent opportunity for aspiring entrepreneurs to receive mentorship, training, and funding to help develop their ideas into viable businesses. The competition has attracted a wide range of participants from various sectors including health, education, agriculture, and finance..",
+    info: "Organized by the Bamenda Tech Community, the challenge is open to individuals and teams who have innovative ideas and projects that address important social, economic, and environmental challenges facing the community. Participants are encouraged to submit projects that leverage technology to create solutions that have a positive impact on the community. The Bamenda Community Challenge provides an excellent opportunity for aspiring entrepreneurs to receive mentorship, training, and funding to help develop their ideas into viable businesses. The competition has attracted a wide range of participants from various sectors including health, education, agriculture, and finance.",
   },
   {
     id: 2,
-    title: "How do I change my My Page password?",
-    info: "Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.",
+    title:
+      "What kind of projects is the Bamenda Community Challenge looking for?",
+    info: "We're seeking innovative and impactful solutions that address real needs faced by the Bamenda community. This could include projects related to education, healthcare, economic development, infrastructure, environment, or social issues. We encourage creative approaches and projects that empower the community itself.",
   },
   {
     id: 3,
-    title: "What is BankID?",
-    info: "Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.",
+    title: "Who can participate in the Bamenda Community Challenge?",
+    info: "The Challenge is open to everyone! Individuals, student groups, community organizations, businesses, and NGOs are all welcome to participate. We encourage collaboration and teamwork to bring together diverse perspectives and expertise.",
   },
   {
     id: 4,
-    title: "Whose birth number can I use?",
-    info: "Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.",
+    title: "What resources are available to participants?",
+    info: "Participants will have access to a variety of resources to support their project development. This may include online workshops, mentorship opportunities with experienced professionals, access to research materials, and potential funding for winning projects.",
   },
   {
     id: 5,
-    title: "When do I recieve a password ordered by letter?",
-    info: "Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ",
+    title: "How will the projects be judged?",
+    info: `<p>Projects will be evaluated based on four key criteria:  <ul>
+  <li><b>Impact</b>: Does the project address a significant need and create positive change for the community?</li>
+  <li><b>Sustainability:</b> Can the project be implemented and maintained in the long term?</li>
+  <li><b>Prototype:</b> Is the project idea clear, and does the prototype effectively showcase the solution?</li>
+  <li><b>Scalability:</b> Can the project be replicated to serve more people or address broader issues?</li>
+</ul>
+</p>
+`,
+  },
+  {
+    id: 6,
+    title:
+      "What are the benefits of participating in the Bamenda Community Challenge?",
+    info: "Participating in the Challenge offers a chance to make a real difference in your community. You'll gain valuable skills in project development, teamwork, and innovation. Winners will receive funding and resources to bring their project to life, and all participants will have the opportunity to network with other passionate individuals and organizations working to improve Bamenda.",
   },
 ];

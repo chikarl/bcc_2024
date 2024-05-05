@@ -13,22 +13,18 @@ function CriteriaSection() {
             </div>
             <h3>Impact</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi
-              tincidunt aenean netus et sit. Id odio id in eu semper eu mattis
-              tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci
-              dolor
+              Does your project tackle a major issue faced by Bamenda residents?
+              We want solutions that address real needs and make a positive
+              difference.
             </p>
           </div>
           <div>
             <h1>20%</h1>
             <h3>UNSDG Adherance</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi
-              tincidunt aenean netus et sit. Id odio id in eu semper eu mattis
-              tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci
-              dolor Lorem ipsum dolor sit amet consectetur. Quam luctus nulla
-              morbi tincidunt aenean netus et sit. Id odio id in eu semper eu
-              mattis
+              Can your project function and be maintained long-term? We're
+              seeking solutions that are realistic and involve the community for
+              continued success.
             </p>
           </div>
         </div>
@@ -39,21 +35,18 @@ function CriteriaSection() {
             </div>
             <h3>Sustainability</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi
-              tincidunt aenean netus et sit. Id odio id in eu semper eu mattis
-              tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci
-              dolor tincidunt aenean netus et sit. Id odio id in eu semper eu
-              mattis
+              Is your project idea clear and easy to understand? A strong
+              prototype showcases the core features and user-friendliness of
+              your solution.
             </p>
           </div>
           <div>
             <h1>10%</h1>
             <h3>Design</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Quam luctus nulla morbi
-              tincidunt aenean netus et sit. Id odio id in eu semper eu mattis
-              tristique sit. Facilisi egestas urna sagittis sed donec. Sed orci
-              dolor
+              Can your project be replicated to serve more people or address
+              broader issues? We value solutions with growth potential for wider
+              impact.
             </p>
           </div>
         </div>
@@ -85,25 +78,24 @@ const Wrapper = styled.div`
     /* padding-top: 48px; */
     line-height: 76.8px;
   }
-    @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1024px) {
     .flex-row {
       flex-direction: column;
     }
     .flex-row > div {
       width: 100%;
     }
-    .flex-row h1{
+    .flex-row h1 {
       font-size: 150px;
       /* line-height: 100px; */
       margin: 0;
     }
-    h3{
+    h3 {
       font-size: 46px;
       line-height: 60px;
     }
-    h2{
+    h2 {
       margin-bottom: 20px;
-
     }
   }
 `;

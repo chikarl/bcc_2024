@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { winners2022top8 } from "../utils/winners";
+import { winners2024top10 } from "../utils/winners";
 import styled, { keyframes } from "styled-components";
 import arrow from "../assets/Arrow Right.svg";
+import team_pic from "../assets/blog1.png"
 
 const slideIn = keyframes`
   from {
@@ -23,7 +24,7 @@ const slideOut = keyframes`
 `;
 
 function TeamCarousel() {
-  const [people, setPeople] = useState(winners2022top8);
+  const [people, setPeople] = useState(winners2024top10);
   const [index, setIndex] = React.useState(0);
 
   useEffect(() => {
@@ -79,14 +80,16 @@ function TeamCarousel() {
                   </div>
                 </div>
                 <div>
-                  <iframe
-                    width="560"
-                    height="315"
-                    src={iframe_src}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen ></iframe>
+                  {
+                    iframe_src == '' ? <img src={team_pic} alt="" /> :<iframe
+                      width="560"
+                      height="315"
+                      src={iframe_src}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen ></iframe>
+                  }
                 </div>
               </div>
             </div>
@@ -99,7 +102,7 @@ function TeamCarousel() {
 const Wrapper = styled.div`
   position: relative;
   margin: 100px 0;
-  height: 450px;
+  height: 650px;
   overflow: hidden;
   article {
     padding-top: 100px;
@@ -173,12 +176,13 @@ const Wrapper = styled.div`
     transform: translateX(100%);
   }
   .flex-row {
-    padding: 20px;
+    padding: 30px;
     background-color: #e8f2ff;
     color: #000;
     align-items: center;
     border-radius: 48px;
     gap: 20px;
+    height: 540px;
   }
   .flex-row > div {
     width: 50%;
@@ -189,24 +193,26 @@ const Wrapper = styled.div`
   h3 {
     font-family: "Product Sans Black";
     font-size: 48px;
-    line-height: 40px;
+    line-height: 50px;
   }
   h5 {
-    padding-top: 10px;
+    padding: 30px 0 10px 0;
     font-size: 20px;
   }
-  iframe {
+  iframe, img {
     border-radius: 32px;
     width: 100%;
   }
     @media only screen and (max-width: 1024px) {
-      height: 800px;
+      height: 1024px;
       .flex-row{
         flex-direction: column-reverse;
+        height: 100%;
       }
       .flex-row > div{
         width: 100%;
       }
+      
     }
 `;
 
