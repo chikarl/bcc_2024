@@ -63,5 +63,10 @@ const Wrapper = styled.div`
     object-fit: cover;
     object-position: center;
   }
+  @media only screen and (max-width: 1024px) {
+    .hero {
+    padding-top: 0rem;
+  }
+  }
 `;
 export default header;

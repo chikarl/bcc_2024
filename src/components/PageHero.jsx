@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import logoBlack from '../assets/logo-black.svg'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 const PageHero = ({ title }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <Wrapper className='container'>
@@ -15,14 +22,26 @@ const PageHero = ({ title }) => {
           </Link>
 
         </div>
-      <div>
-        <ul>
-          <li><a href="#">TImeline</a></li>
-          <li><a href="#">Prizes</a></li>
-          <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/winners">Winners</Link></li>
-        </ul>
-      </div>
+      <div className="menu">
+          <FontAwesomeIcon icon={faBars} className="hamburger" onClick={toggleMenu}/>
+          <ul className={isOpen ? "active" : ""}>
+            <li>
+              <a href="#">Timeline</a>
+            </li>
+            <li>
+              <Link to="/winners">Winners</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div>
         <h1>{title}</h1>
@@ -78,5 +97,36 @@ li a{
   /* margin: 50px 0 10px 0; */
   }
  }
+ .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .menu {
+      position: relative;
+    }
+
+    ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 100%;
+      background-color: #fff;
+      padding: 10px;
+      width: 100%;
+    }
+
+    ul.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
 `
 export default PageHero

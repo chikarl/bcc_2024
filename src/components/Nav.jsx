@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ function Nav() {
           </div>
         </div>
         <div className="menu">
-          <h1 icon="fa-solid fa-bars" className="hamburger" onClick={toggleMenu} > Bars </h1>
+          <FontAwesomeIcon icon={faBars} className="hamburger" onClick={toggleMenu}/>
           <ul className={isOpen ? "active" : ""}>
             <li>
               <a href="#">Timeline</a>
@@ -93,10 +94,13 @@ const Wrapper = styled.div`
       flex-direction: column;
       position: absolute;
       top: 100%;
-      left: 0;
+      right: 100%;
       background-color: #4c25ef;
       padding: 10px;
       width: 100%;
+    }
+    ul a {
+      text-align: center;
     }
 
     ul.active {
