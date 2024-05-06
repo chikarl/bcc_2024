@@ -91,7 +91,7 @@ function Top3Section() {
                             {color === "black" ? (
                               <div className="flex-row">
                                 <button className="btn button black">
-                                  View Dome
+                                  Watch Demo
                                 </button>
                                 <button className="btn button black ">
                                   Read More
@@ -272,7 +272,7 @@ const Wrapper = styled.div`
       font-size: 24px;
     }
     p {
-      padding-bottom: 20px;
+      padding-bottom: 32px;
     }
     .container .winners {
       width: 100%;

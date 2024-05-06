@@ -188,7 +188,7 @@ const Wrapper = styled.div`
     width: 50%;
   }
   p {
-    padding-bottom: 10px;
+    padding-bottom: 32px;
   }
   h3 {
     font-family: "Product Sans Black";
