@@ -196,7 +196,7 @@ const Wrapper = styled.div`
     line-height: 50px;
   }
   h5 {
-    padding: 30px 0 10px 0;
+    padding: 30px 0 30px 0;
     font-size: 20px;
   }
   iframe, img {

@@ -55,14 +55,20 @@ const Wrapper = styled.div`
     flex-direction: column-reverse;
 
   }
+
+  p {
+    padding-bottom: 10px;
+  }
   h3 {
     font-family: "Product Sans Black";
     font-size: 48px;
+    line-height: 50px;
   }
   h5 {
+    padding: 30px 0 30px 0;
     font-size: 20px;
   }
-  iframe {
+  iframe, img {
     border-radius: 32px 32px 0 0;
     width: 100%;
   }

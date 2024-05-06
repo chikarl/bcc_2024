@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { winners2024top10 } from "../utils/winners";
+import team_pic from "../assets/blog1.png"
 
 function TeamListView() {
   return (
@@ -22,14 +23,16 @@ function TeamListView() {
                 <p>{description}</p>
               </div>
               <div>
-                <iframe
-                  width="560"
-                  height="315"
-                  src={iframe_src}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen ></iframe>
+                {
+                    iframe_src == '' ? <img src={team_pic} alt="" /> :<iframe
+                      width="560"
+                      height="315"
+                      src={iframe_src}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen ></iframe>
+                  }
               </div>
             </div>
           );
@@ -51,15 +54,20 @@ const Wrapper = styled.div`
   }
   .flex-row > div {
     width: 50%;
+  } 
+  p {
+    padding-bottom: 10px;
   }
   h3 {
     font-family: "Product Sans Black";
     font-size: 48px;
+    line-height: 50px;
   }
   h5 {
+    padding: 30px 0 30px 0;
     font-size: 20px;
   }
-  iframe {
+  iframe, img {
     border-radius: 32px;
     width: 100%;
   }
