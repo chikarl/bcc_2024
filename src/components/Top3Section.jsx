@@ -208,7 +208,7 @@ const Wrapper = styled.div`
     z-index: 0;
   }
   .btn {
-    margin-right: 20px;
+    margin-right: 32px;
     padding: 15px 48px;
     font-size: 16px;
   }
@@ -285,6 +285,10 @@ const Wrapper = styled.div`
   }
   @media only screen and (max-width: 425px) {
   height: 80vh;
-}
+  
+  .btn {
+    margin-right: 20px;
+  }
+  }
 `;
 export default Top3Section;
