@@ -79,7 +79,7 @@ function TeamCarousel() {
                     </button>
                   </div>
                 </div>
-                <div>
+                <div className="video">
                   {
                     iframe_src == '' ? <img src={team_pic} alt="" /> :<iframe
                       width="560"
@@ -202,6 +202,12 @@ const Wrapper = styled.div`
   iframe, img {
     border-radius: 32px;
     width: 100%;
+    /* height: 100%; */
+  }
+  .video img{
+    height: 480px;
+    object-fit: cover;
+    /* boxfit: cover; */
   }
     @media only screen and (max-width: 1024px) {
       height: 1030px;
