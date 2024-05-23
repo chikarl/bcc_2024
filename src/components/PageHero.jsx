@@ -34,9 +34,9 @@ const PageHero = ({ title }) => {
             <li>
               <Link to="/gallery">Gallery</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/blog">Blog</Link>
-            </li>
+            </li> */}
             <li>
               <a href="#contact">Contact</a>
             </li>

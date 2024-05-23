@@ -221,8 +221,18 @@ const Wrapper = styled.div`
       .flex-row > div{
         width: 100%;
       }
-      
+      .video img{
+    height: 100%;
+    object-fit: cover;
+    /* boxfit: cover; */
+  }
+    @media only screen and (max-width: 512px) {
+        height: 1150px;
+       .flex-row{
+        height: 1030px;
+      }
     }
-`;
+  }
+  `;
 
 export default TeamCarousel;

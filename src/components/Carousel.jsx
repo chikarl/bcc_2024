@@ -52,6 +52,7 @@ const Wrapper = styled.div`
   justify-content: center;
 }
 .card img {
+  object-fit: contain;
     height: 100%;
     width: 100%;
   }

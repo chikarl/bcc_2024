@@ -23,7 +23,7 @@ function Home() {
       <TeamCarousel />
       <Top3Section />
       <CriteriaSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <Gallery />
       <ContactSection />
       <FaqSection />
