@@ -5,12 +5,15 @@ import img3 from '../assets/logos/ADAPTIV.png'
 import img4 from '../assets/logos/Premier Dev.jpg'
 import img5 from '../assets/logos/UniBAgency_logo.png'
 import img6 from '../assets/logos/Oppnergy-Main@final.png'
-import img7 from '../assets/logos/GDSC Uba.svg'
-import img8 from '../assets/logos/GDG Bambili.svg'
-import img9 from '../assets/logos/GDG Bda.svg'
+import img7 from '../assets/logos/NICE STAR GROUP  origina.png'
+import img8 from '../assets/logos/20240110_214838_0000.png'
+import img9 from '../assets/logos/Asset 1@300x-8.png'
 import img10 from '../assets/logos/FOF Bamenda.svg'
 import img11 from '../assets/logos/MLSA.svg'
-import img12 from '../assets/logos/Mavia.svg'
+import img12 from '../assets/logos/GDSC Uba.svg'
+import img13 from '../assets/logos/Mavia.svg'
+import img14 from '../assets/logos/GDG Bambili.svg'
+import img15 from '../assets/logos/GDG Bda.svg'
 
 export const resources = [
     {
@@ -54,5 +57,15 @@ export const resources = [
     {
       id: 12,
       image: img12
+    },
+    {
+      id: 13,
+      image: img13
+    },{
+      id:14,
+      image: img14
+    },{
+      id:15,
+      image: img15
     }
   ]

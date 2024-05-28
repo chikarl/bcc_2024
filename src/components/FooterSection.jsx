@@ -43,7 +43,7 @@ function FooterSection() {
               </li>
               <li className="footer_btn">
                 <a
-                  href="https://mobile.twitter.com/BamendaCom77733"
+                  href="https://x.com/bcc_237"
                   target="_blank">
                   Twitter/X
                 </a>
