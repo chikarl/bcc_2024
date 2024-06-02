@@ -8,12 +8,15 @@ import img6 from '../assets/logos/Oppnergy-Main@final.png'
 import img7 from '../assets/logos/NICE STAR GROUP  origina.png'
 import img8 from '../assets/logos/20240110_214838_0000.png'
 import img9 from '../assets/logos/Asset 1@300x-8.png'
-import img10 from '../assets/logos/FOF Bamenda.svg'
-import img11 from '../assets/logos/MLSA.svg'
-import img12 from '../assets/logos/GDSC Uba.svg'
-import img13 from '../assets/logos/Mavia.svg'
-import img14 from '../assets/logos/GDG Bambili.svg'
-import img15 from '../assets/logos/GDG Bda.svg'
+import img10 from '../assets/logos/Traitz Logo.jpg'
+import img11 from '../assets/logos/WhatsApp Image 2024-05-29 at 18.10.55_6f290810.jpg'
+import img12 from '../assets/logos/logo-django-cameroon.svg'
+import img13 from '../assets/logos/FOF Bamenda.svg'
+import img14 from '../assets/logos/GDG Bda.svg'
+import img15 from '../assets/logos/GDG Bambili.svg'
+import img16 from '../assets/logos/Mavia.svg'
+import img17 from '../assets/logos/GDSC Uba.svg'
+import img18 from '../assets/logos/MLSA.svg'
 
 export const resources = [
     {
@@ -67,5 +70,14 @@ export const resources = [
     },{
       id:15,
       image: img15
+    },{
+      id:16,
+      image: img16
+    },{
+      id:17,
+      image: img17
+    },{
+      id:18,
+      image: img18
     }
   ]
