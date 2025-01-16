@@ -53,6 +53,7 @@ const Wrapper = styled.div`
     color: #000;
     border-radius: 48px;
     flex-direction: column-reverse;
+    justify-content: start;
 
   }
 
@@ -69,7 +70,7 @@ const Wrapper = styled.div`
     font-size: 20px;
   }
   iframe, img {
-    border-radius: 32px 32px 0 0;
+    border-radius: 32px 32px;
     width: 100%;
   }
   

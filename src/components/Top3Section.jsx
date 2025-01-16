@@ -20,10 +20,11 @@ const slideOut = keyframes`
   }
 `;
 
-function Top3Section() {
+function Top3Section({ year, data}) {
   const [people, setPeople] = useState(winners2023);
   const [index, setIndex] = React.useState(0);
-
+  console.log(people);
+  
   useEffect(() => {
     const lastIndex = people.length - 1;
     if (index < 0) {
@@ -82,7 +83,7 @@ function Top3Section() {
                   <div style={divStyle} className="main flex-row">
                     <div className="container">
                       <div className="winners">
-                        <h2>Meet our 2023 Winners</h2>
+                        <h2>Meet our {year} Winners</h2>
                         <div className="">
                           <h1>{title}</h1>
                           <h2>{team_position}</h2>

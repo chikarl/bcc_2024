@@ -11,13 +11,14 @@ import img9 from '../assets/logos/Asset 1@300x-8.png'
 import img10 from '../assets/logos/Traitz Logo.jpg'
 import img11 from '../assets/logos/WhatsApp Image 2024-05-29 at 18.10.55_6f290810.jpg'
 import img12 from '../assets/logos/logo-django-cameroon.svg'
-import img13 from '../assets/logos/FOF Bamenda.svg'
-import img14 from '../assets/logos/GDG Bda.svg'
 import img15 from '../assets/logos/GDG Bambili.svg'
 import img16 from '../assets/logos/Mavia.svg'
 import img17 from '../assets/logos/GDSC Uba.svg'
 import img18 from '../assets/logos/MLSA.svg'
-
+import img13 from '../assets/logos/Dimoly_black_bg.png'
+import img14 from '../assets/logos/chapter-badge Dla 2.png'
+import img19 from '../assets/logos/GDG Bda.svg'
+import img20 from '../assets/logos/FOF Bamenda.svg'
 export const resources = [
     {
       id: 1,
@@ -79,5 +80,13 @@ export const resources = [
     },{
       id:18,
       image: img18
+    },
+    {
+      id:19,
+      image: img19
+    },
+    {
+      id:20,
+      image: img20
     }
   ]

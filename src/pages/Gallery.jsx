@@ -1,6 +1,6 @@
 import React from 'react'
 import PageHero from '../components/PageHero'
-import Gallery from '../components/Gallery'
+import Gallery from '../components/GalleryContainer'
 function GalleryPage() {
   return (
     <div>
