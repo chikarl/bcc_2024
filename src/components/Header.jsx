@@ -2,28 +2,35 @@ import React from "react";
 import styled from "styled-components";
 import hero_img from "../assets/hero_img.svg";
 import Nav from "./Nav";
+import logo from "../assets/logo.svg";
 
 function header() {
   return (
     <Wrapper>
       <div className="container hero">
         <Nav />
-        <div className="hero_text">
-          <p>
-            Organized by the Bamenda Tech Community, the challenge is open to
-            individuals and teams who have innovative ideas and projects that
-            address important social, economic, and environmental challenges
-            facing the community. Participants are encouraged to submit projects
-            that leverage technology to create solutions that have a positive
-            impact on the community
-          </p>
-          <p>
-            The Bamenda Community Challenge provides an excellent opportunity
-            for aspiring entrepreneurs to receive mentorship, training, and
-            funding to help develop their ideas into viable businesses. The
-            competition has attracted a wide range of participants from various
-            sectors including health, education, agriculture, and finance..
-          </p>
+        <div className="flex-row">
+          <div>
+            <img src={logo} alt="Logo" />
+          </div>
+          <div className="hero_text">
+            <p>
+              Organized by the Bamenda Tech Community, the challenge is open to
+              individuals and teams who have innovative ideas and projects that
+              address important social, economic, and environmental challenges
+              facing the community. Participants are encouraged to submit
+              projects that leverage technology to create solutions that have a
+              positive impact on the community
+            </p>
+            <p>
+              The Bamenda Community Challenge provides an excellent opportunity
+              for aspiring entrepreneurs to receive mentorship, training, and
+              funding to help develop their ideas into viable businesses. The
+              competition has attracted a wide range of participants from
+              various sectors including health, education, agriculture, and
+              finance..
+            </p>
+          </div>
         </div>
       </div>
       <div className="hero_img">
@@ -38,7 +45,8 @@ const Wrapper = styled.div`
   background-color: #4c25ef;
   color: white;
   .hero {
-    padding-top: 3rem;
+    padding-top: 1rem;
+    /* padding: 2rem; */
   }
   .hero_text {
     margin-left: auto;
@@ -65,8 +73,8 @@ const Wrapper = styled.div`
   }
   @media only screen and (max-width: 1024px) {
     .hero {
-    padding-top: 0rem;
-  }
+      padding-top: 0rem;
+    }
   }
 `;
 export default header;

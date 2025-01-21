@@ -20,8 +20,8 @@ function Home() {
       <Register />
       <Steps />
       <Partners />
-      <TeamCarousel />
       <Top3Section />
+      <TeamCarousel />
       <CriteriaSection />
       {/* <BlogSection /> */}
       <Gallery />

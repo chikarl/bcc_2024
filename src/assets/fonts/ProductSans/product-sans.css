@@ -8,15 +8,15 @@
   src: url(./ProductSans-Black.ttf);
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Product Sans Light';
-  src: url(../src/assets/fonts/ProductSans-Light.ttf);
+  src: url(./ProductSans-Light.ttf);
 }
 @font-face {
   font-family: 'Product Sans Regular';
-  src: url(../src/assets/fonts/ProductSans-Regular.ttf);
+  src: url(.ProductSans-Regular.ttf);
 }
 @font-face {
   font-family: 'Product Sans Medium';
-  src: url(../src/assets/fonts/ProductSans-Medium.ttf);
-} */
+  src: url(./ProductSans-Medium.ttf);
+} 

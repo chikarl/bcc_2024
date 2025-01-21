@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
-import { winners2023 } from "../utils/winners";
+import { winners2024 } from "../utils/winners";
 
 const slideIn = keyframes`
   from {
@@ -21,7 +21,7 @@ const slideOut = keyframes`
 `;
 
 function Top3Section({ year, data}) {
-  const [people, setPeople] = useState(winners2023);
+  const [people, setPeople] = useState(winners2024);
   const [index, setIndex] = React.useState(0);
   console.log(people);
   

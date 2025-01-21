@@ -47,7 +47,7 @@ const Wrapper = styled.div`
     text-transform: none;
     line-height: 1.5;
     font-size: 36px;
-    font-family: "Product Sans Medium";
+    font-family: "Product Sans Medium", sans-serif;
   }
   .question p {
     color: var(--clr-grey-3);

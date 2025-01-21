@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo_1.svg";
+import logo from "../assets/logo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,7 +17,7 @@ function Nav() {
       <div className="flex-row">
         <div>
           <div className="logo">
-            <img src={logo} alt="Logo" />
+            {/* <img src={logo} alt="Logo" /> */}
           </div>
         </div>
         <div className="menu">
@@ -53,6 +53,7 @@ const Wrapper = styled.div`
     padding: 20px 0px;
     background-color: #4c25ef;
     color: white;
+    padding-bottom: 3rem;
   }
 
   .menu {

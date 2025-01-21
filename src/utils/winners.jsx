@@ -2,6 +2,9 @@ import React from "react";
 import blog1 from "../assets/teams/w1.jpg";
 import blog2 from "../assets/teams/w3.jpg";
 import blog3 from "../assets/teams/w2.jpg";
+import win24_1 from "../assets/teams/W24_1.jpg"
+import win24_2 from "../assets/teams/W24_2.jpg"
+import win24_3 from "../assets/teams/W24_3.jpg"
 import arrow_black from "../assets/Arrow Right.svg";
 import arrow_white from "../assets/ArrowWhite.svg";
 
@@ -162,7 +165,7 @@ export const winners2024 = [
   {
     id: 1,
     title: "FindHome",
-    bg_img: blog1,
+    bg_img: win24_1,
     team_position: "1st Place, BCC 2024",
     content: `Buhnyuy Ronald Yika, Djou Kenne Belviane Manuelle, Fondzenyuy Cecilia Berinyuy, TANYU BRANDON`,
     bg_color: "#000",
@@ -174,10 +177,10 @@ export const winners2024 = [
   },
   {
     id: 2,
-    title: "Health Ease",
-    bg_img: blog3,
-    team_position: "2nd Place, BCC 2023",
-    content: `Fonguong Edrick Nchombonui, Wunjah Alvine Teikam, Foryoung Junior Ngu Taniform, Nyuydine Bill Leynyuy`,
+    title: "BOLO",
+    bg_img: win24_2,
+    team_position: "2nd Place, BCC 2024",
+    content: `Fotso Tachula Eddy-Steve, Yuh Randy, Ngwa Frank, Lanso James`,
     bg_color: "#04d4f9",
     color: "black",
     demo_video: "",
@@ -185,10 +188,10 @@ export const winners2024 = [
   },
   {
     id: 3,
-    title: "Guardians of the Ozone",
-    bg_img: blog2,
-    team_position: "3rd Place, BCC 2023",
-    content: `Bora Faith, Lukong Charlotte, Manka Zoe`,
+    title: "Agromate",
+    bg_img: win24_3,
+    team_position: "3rd Place, BCC 2024",
+    content: `Ghany Elisha, Chia Raissa, Mary Makuchi`,
     bg_color: "#00ff0d",
     color: "black",
     demo_video: "",
