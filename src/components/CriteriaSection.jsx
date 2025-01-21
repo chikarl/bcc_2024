@@ -65,7 +65,8 @@ const Wrapper = styled.div`
   }
   .flex-row h1 {
     font-family: "Product Sans Black";
-    color: rgb(0, 0, 0, 0.1);
+    /* color: rgb(0, 0, 0, 0.1); */
+    color: #E4DFFF;
     font-size: 200px;
     line-height: 125px;
     text-align: left;

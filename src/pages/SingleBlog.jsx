@@ -16,7 +16,7 @@ function SingleBlog() {
   useEffect(() => {
     axios
       .get(
-        `https://bcc.christmastreeemporium.com/wp-json/wp/v2/posts/${blog_id}`
+        `https://blog.alouzehbrandone.com/wp-json/wp/v2/posts/${blog_id}`
       )
       .then((res) => {
         setSinglePost(res.data);
@@ -31,10 +31,10 @@ function SingleBlog() {
     const { featured_media, author: authorId } = singlePost;
 
     const getImageUrl = axios.get(
-      `https://bcc.christmastreeemporium.com/wp-json/wp/v2/media/${featured_media}`
+      `https://blog.alouzehbrandone.com/wp-json/wp/v2/media/${featured_media}`
     );
     const getAuthor = axios.get(
-      `https://bcc.christmastreeemporium.com/wp-json/wp/v2/users/${authorId}`
+      `https://blog.alouzehbrandone.com/wp-json/wp/v2/users/${authorId}`
     );
 
     Promise.all([getImageUrl, getAuthor]).then(([imageUrlRes, authorRes]) => {
@@ -83,10 +83,10 @@ function SingleBlog() {
 
 const Wrapper = styled.div`
   .blog-header {
-    height: 100vh;
+    height: 90vh;
   }
   .blog-header .container .blog-info {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 260px);
   }
   .flex-row {
     align-items: center;
@@ -100,9 +100,9 @@ const Wrapper = styled.div`
     object-fit: cover;
   }
   h2 {
-    font-size: 72px;
+    font-size: 52px;
     font-weight: 600;
-    line-height: 80px;
+    line-height: 60px;
     padding: 30px 0;
   }
   p,

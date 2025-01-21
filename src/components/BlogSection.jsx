@@ -11,7 +11,7 @@ function BlogSection() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    axios.get('https://bcc.christmastreeemporium.com/wp-json/wp/v2/posts')
+    axios.get('https://blog.alouzehbrandone.com//wp-json/wp/v2/posts')
       .then(res => {
         setPosts(res.data);
         setIsLoaded(true);

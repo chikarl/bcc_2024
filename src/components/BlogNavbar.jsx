@@ -27,19 +27,13 @@ const BlogNavbar = ({ blog }) => {
         <div>
           <ul>
             <li>
-              <a href="#" style={divColor}>
-                TImeline
-              </a>
+              <Link to="/winners">Winners</Link>
             </li>
             <li>
-              <a href="#" style={divColor}>
-                Prizes
-              </a>
+              <Link to="/gallery">Gallery</Link>
             </li>
             <li>
-              <a href="#" style={divColor}>
-                Blog
-              </a>
+              <Link to="/blog">Blog</Link>
             </li>
           </ul>
         </div>

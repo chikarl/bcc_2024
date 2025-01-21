@@ -23,21 +23,21 @@ function Nav() {
         <div className="menu">
           <FontAwesomeIcon icon={faBars} className="hamburger" onClick={toggleMenu}/>
           <ul className={isOpen ? "active" : ""}>
-            <li>
+            {/* <li>
               <a href="#">Timeline</a>
-            </li>
+            </li> */}
             <li>
               <Link to="/winners">Winners</Link>
             </li>
             <li>
               <Link to="/gallery">Gallery</Link>
             </li>
-            {/* <li>
-              <Link to="/blog">Blog</Link>
-            </li> */}
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/blog">Blog</Link>
             </li>
+            {/* <li>
+              <a href="./#contact">Contact</a>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -7,7 +7,7 @@ function BlogImg({ featured_media }) {
   useEffect(() => {
     axios
       .get(
-        `https://bcc.christmastreeemporium.com/wp-json/wp/v2/media/${featured_media}`
+        `https://blog.alouzehbrandone.com/wp-json/wp/v2/media/${featured_media}`
       )
       .then((res) => {
         setImgUrl(res.data.media_details.sizes.full.source_url);

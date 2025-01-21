@@ -12,7 +12,7 @@ function Posts() {
 
   useEffect(() => {
     axios
-      .get("https://bcc.christmastreeemporium.com/wp-json/wp/v2/posts")
+      .get("https://blog.alouzehbrandone.com/wp-json/wp/v2/posts")
       .then((res) => {
         setPosts(res.data);
         setIsLoaded(true);
