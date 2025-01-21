@@ -168,12 +168,11 @@ export const winners2024 = [
     bg_img: win24_1,
     team_position: "1st Place, BCC 2024",
     content: `Buhnyuy Ronald Yika, Djou Kenne Belviane Manuelle, Fondzenyuy Cecilia Berinyuy, TANYU BRANDON`,
-    bg_color: "#000",
-    color: "white",
-    demo_video: "https://www.youtube.com/embed/sBMQ93evByE?si=m-6QZvPm08d9a6Yd",
-    description:
-      "FindHome is a comprehensive cross-platform application designed to streamline the process of finding and booking accommodations. Whether you're seeking a cozy hostel, a spacious house, a luxurious hotel, or a charming guest house, FindHome offers a vast selection to meet your needs.",
-    arrow: arrow_white,
+    bg_color: "#F9BA04",
+    color: "black",
+    demo_video: "https://www.youtube.com/embed/sBMQ93evByE?si=s4H9Psohc8tyqLSI",
+    arrow: arrow_black,
+    article_link: "/blog/23"
   },
   {
     id: 2,
@@ -185,6 +184,7 @@ export const winners2024 = [
     color: "black",
     demo_video: "",
     arrow: arrow_black,
+    article_link: "/blog/19"
   },
   {
     id: 3,
@@ -194,8 +194,9 @@ export const winners2024 = [
     content: `Ghany Elisha, Chia Raissa, Mary Makuchi`,
     bg_color: "#00ff0d",
     color: "black",
-    demo_video: "",
+    demo_video: "https://www.youtube.com/embed/wogEsGsGZ1Y?si=A8Mq9Y4UwOL_az-P",
     arrow: arrow_black,
+    article_link: "/blog/29"
   },
 ];
 
