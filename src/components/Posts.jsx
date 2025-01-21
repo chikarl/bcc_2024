@@ -124,6 +124,7 @@ const Wrapper = styled.div`
   h3 {
     font-size: 40px;
     margin-bottom: 32px;
+    font-family: "Product Sans Medium", sans-serif;
   }
   .flex-row:nth-child(even) {
     flex-direction: row-reverse;

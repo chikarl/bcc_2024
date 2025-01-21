@@ -38,7 +38,7 @@ function Top3Section({ year, data}) {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 10000);
+    }, 10100);
     return () => {
       clearInterval(slider);
     };

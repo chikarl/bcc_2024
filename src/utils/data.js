@@ -19,6 +19,7 @@ import img13 from '../assets/logos/Dimoly_black_bg.png'
 import img14 from '../assets/logos/chapter-badge Dla 2.png'
 import img19 from '../assets/logos/GDG Bda.svg'
 import img20 from '../assets/logos/FOF Bamenda.svg'
+
 export const resources = [
     {
       id: 1,

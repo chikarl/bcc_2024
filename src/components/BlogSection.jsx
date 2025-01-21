@@ -129,6 +129,7 @@ const Wrapper = styled.div`
   }
   h3 {
     font-size: 40px;
+    font-family: "Product Sans Medium", sans-serif;
     margin-bottom: 32px;
   }
   .flex-row:nth-child(odd) .rev-col {

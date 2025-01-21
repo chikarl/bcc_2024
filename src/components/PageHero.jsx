@@ -61,7 +61,7 @@ const Wrapper = styled.div`
 h1{
   font-size: 72px;
   font-family: "Product Sans Black";
-  margin: 50px 0 100px 0;
+  margin: 25px 0 50px 0;
   line-height: 75px;
   width: 620px;
 }
