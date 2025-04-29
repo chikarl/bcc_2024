@@ -42,9 +42,7 @@ function FooterSection() {
                 <img src={arrow} alt="" />
               </li>
               <li className="footer_btn">
-                <a
-                  href="https://x.com/bcc_237"
-                  target="_blank">
+                <a href="https://x.com/bcc_237" target="_blank">
                   Twitter/X
                 </a>
                 <img src={arrow} alt="" />
@@ -54,20 +52,24 @@ function FooterSection() {
         </div>
         <div className="flex-row flex-bottom">
           <div>
-            <Link to="https://cits.cm/" target="_blank">
+            {/* <Link to="https://cits.cm/" target="_blank">
               <img src={sponsor} alt="CIT" />
-            </Link>
+            </Link> */}
           </div>
           <div>
             <ul className="flex-row">
               <li>
-                <Link to="/">About</Link>
+                <Link to="#about">About</Link>
               </li>
               <li>
-                <Link to="/">Become a Sponsor</Link>
+                <Link to="/">
+                  <a href="mailto:info@bamendacommunitychallenge.com">
+                    Become a Sponsor
+                  </a>
+                </Link>
               </li>
               <li>
-                <Link to="/">Contact</Link>
+                <Link to="./#contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -175,24 +177,23 @@ const Wrapper = styled.section`
       brightness(100%) contrast(100%);
   }
 
-
   @media only screen and (max-width: 1024px) {
-    ul.flex-row{
+    ul.flex-row {
       flex-wrap: wrap;
       padding: 0 20px;
       justify-content: end;
     }
-    ul.flex-row a{
+    ul.flex-row a {
       font-size: 14px;
     }
-    .flex-row{
+    .flex-row {
       align-items: center;
     }
-    a img{
+    a img {
       width: 200px;
       padding: 20px 0;
     }
-    .container > div{
+    .container > div {
       padding: 0;
     }
   }

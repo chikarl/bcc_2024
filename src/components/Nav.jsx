@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +17,15 @@ function Nav() {
       <div className="flex-row">
         <div>
           <div className="logo">
-            {/* <img src={logo} alt="Logo" /> */}
+            <img src={logo} alt="Logo" />
           </div>
         </div>
         <div className="menu">
-          <FontAwesomeIcon icon={faBars} className="hamburger" onClick={toggleMenu}/>
+          <FontAwesomeIcon
+            icon={faBars}
+            className="hamburger"
+            onClick={toggleMenu}
+          />
           <ul className={isOpen ? "active" : ""}>
             {/* <li>
               <a href="#">Timeline</a>
@@ -55,7 +59,9 @@ const Wrapper = styled.div`
     color: white;
     padding-bottom: 3rem;
   }
-
+  .logo {
+    display: none;
+  }
   .menu {
     display: flex;
     align-items: center;
@@ -89,7 +95,12 @@ const Wrapper = styled.div`
     .menu {
       position: relative;
     }
-
+    .logo {
+      display: block;
+    }
+    .logo img {
+      width: 120px;
+    }
     ul {
       display: none;
       flex-direction: column;
@@ -99,6 +110,7 @@ const Wrapper = styled.div`
       background-color: #4c25ef;
       padding: 10px;
       width: 100%;
+      min-width: 70px;
     }
     ul a {
       text-align: center;
@@ -111,7 +123,7 @@ const Wrapper = styled.div`
     .hamburger {
       display: block;
     }
-    img{
+    img {
       width: 250px;
     }
   }

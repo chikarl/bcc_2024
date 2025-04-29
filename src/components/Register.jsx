@@ -83,7 +83,7 @@ function Register() {
                       <p>{info}</p>
                     </div>
                     <div className="flex-col">
-                      <Link to="#">
+                      <Link to="https://forms.gle/hmEvEzqXSmCrQYiT7">
                         {color === "black" ? (
                           <button className="btn black button" style={divColor}>
                             Submit a Solution
@@ -141,13 +141,13 @@ const Wrapper = styled.div`
     overflow: hidden;
     border-radius: 48px;
   }
-  
+
   .text-section {
     border-radius: 48px 0 0 48px;
-    background-color: var(--blue); 
+    background-color: var(--blue);
     height: 450px;
     color: white;
-    flex: 0 0 50%; 
+    flex: 0 0 50%;
     display: flex;
   }
 
@@ -201,7 +201,7 @@ const Wrapper = styled.div`
   .button {
     background-color: transparent;
     padding: 0 5px;
-    border: 1px solid ;
+    border: 1px solid;
     overflow: hidden;
     position: relative;
     text-decoration: none;
@@ -209,7 +209,7 @@ const Wrapper = styled.div`
     will-change: transform;
     z-index: 0;
     border-radius: 36px;
-      padding: 8px 28px;
+    padding: 8px 28px;
   }
   .black.button::after {
     background-color: black;
@@ -282,16 +282,15 @@ const Wrapper = styled.div`
   article.nextSlide {
     transform: translateX(100%);
   }
-    @media only screen and (max-width: 1024px) {
-      .image-section{
-        display: none;
-      }
+  @media only screen and (max-width: 1024px) {
+    .image-section {
+      display: none;
+    }
     .container.register {
       flex-direction: column;
-
     }
     .register-info {
-      margin: 0 24px ;
+      margin: 0 24px;
       padding: 24px 0;
     }
     .text-section {

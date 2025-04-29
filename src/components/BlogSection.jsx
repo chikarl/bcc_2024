@@ -11,12 +11,13 @@ function BlogSection() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    axios.get('https://blog.alouzehbrandone.com//wp-json/wp/v2/posts')
-      .then(res => {
+    axios
+      .get("https://blog.alouzehbrandone.com/wp-json/wp/v2/posts")
+      .then((res) => {
         setPosts(res.data);
         setIsLoaded(true);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
 
   if (isLoaded) {
@@ -24,7 +25,7 @@ function BlogSection() {
       <Wrapper>
         <div className="container">
           <h2>Blog</h2>
-        {posts.slice(0, 3).map(post => (
+          {posts.slice(0, 3).map((post) => (
             <div className="flex-row post" key={post.id}>
               <div>
                 <div className="rev-col">
@@ -38,15 +39,15 @@ function BlogSection() {
                 </div>
               </div>
               <div className="blog-img">
-                <BlogImg  featured_media={post.featured_media} />
+                <BlogImg featured_media={post.featured_media} />
               </div>
             </div>
-        ))}
+          ))}
         </div>
       </Wrapper>
     );
   }
-  
+
   return <Loading />;
 }
 
@@ -119,9 +120,10 @@ const Wrapper = styled.div`
   .flex-row .button a {
     color: #000;
   }
-   .flex-row button:hover img.arrow_icon{
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-   }
+  .flex-row button:hover img.arrow_icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+      brightness(100%) contrast(100%);
+  }
   img.arrow_icon {
     width: 28px !important;
     height: 28px !important;
@@ -199,26 +201,26 @@ const Wrapper = styled.div`
     transform: scale(1.05);
     will-change: transform;
   }
-    @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 425px) {
     .flex-row {
       flex-direction: column-reverse;
     }
     .flex-row > div {
-    width: 100%;
+      width: 100%;
+    }
+    .flex-row:nth-child(odd) .rev-col {
+      margin-left: 0px;
+    }
+    .flex-row:nth-child(odd) {
+      flex-direction: column-reverse;
+    }
+    h3 {
+      font-size: 28px;
+      margin: 10px 0 10px 0;
+    }
+    button {
+      margin-bottom: 30px;
+    }
   }
-  .flex-row:nth-child(odd) .rev-col {
-    margin-left: 0px;
-  }
-  .flex-row:nth-child(odd) {
-    flex-direction: column-reverse;
-  }
-  h3{
-    font-size: 28px;
-    margin: 10px 0 10px 0;
-  }
-  button{
-    margin-bottom: 30px;
-  }
-}
 `;
 export default BlogSection;

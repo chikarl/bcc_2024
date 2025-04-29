@@ -11,12 +11,13 @@ import ContactSection from "../components/ContactSection";
 import CriteriaSection from "../components/CriteriaSection";
 import Top3Section from "../components/Top3Section";
 import TeamCarousel from "../components/TeamCarousel";
-
+import Exhibition from "../components/Exhibition";
 function Home() {
   return (
     <div>
       <Header />
       <HeaderCarousel />
+      <Exhibition />
       <Register />
       <Steps />
       <Partners />

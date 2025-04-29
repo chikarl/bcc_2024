@@ -20,7 +20,7 @@ function ContactSection() {
                 </p>
               </div>
               <div className="flex-col">
-                <a href="mailto:hello@bamendacommunitychallenge.com">
+                <a href="mailto:info@bamendacommunitychallenge.com">
                   <button className="btn white button">Contact Us</button>
                 </a>
               </div>

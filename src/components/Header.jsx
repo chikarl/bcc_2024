@@ -10,7 +10,7 @@ function header() {
       <div className="container hero">
         <Nav />
         <div className="flex-row">
-          <div>
+          <div className="logo_inner">
             <img src={logo} alt="Logo" />
           </div>
           <div className="hero_text">
@@ -74,6 +74,9 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 1024px) {
     .hero {
       padding-top: 0rem;
+    }
+    .logo_inner {
+      display: none;
     }
   }
 `;

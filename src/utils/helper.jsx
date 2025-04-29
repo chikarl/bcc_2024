@@ -10,11 +10,11 @@ import img21 from "../assets/4.jpg";
 import img31 from "../assets/20.jpg";
 import img41 from "../assets/25.jpg";
 import img51 from "../assets/27.jpg";
-import BCC24_HC1 from "../assets/header_imgs/BCC24_HC1.jpg"
-import BCC24_HC2 from "../assets/header_imgs/BCC24_HC2.jpg"
-import BCC24_HC3 from "../assets/header_imgs/BCC24_HC3.jpg"
-import BCC24_HC4 from "../assets/header_imgs/BCC24_HC4.jpg"
-import BCC24_HC5 from "../assets/header_imgs/BCC24_HC5.jpg"
+import BCC24_HC1 from "../assets/header_imgs/BCC24_HC1.jpg";
+import BCC24_HC2 from "../assets/header_imgs/BCC24_HC2.jpg";
+import BCC24_HC3 from "../assets/header_imgs/BCC24_HC3.jpg";
+import BCC24_HC4 from "../assets/header_imgs/BCC24_HC4.jpg";
+import BCC24_HC5 from "../assets/header_imgs/BCC24_HC5.jpg";
 
 import img22 from "../assets/BCC23IMG_1.png";
 import img23 from "../assets/step2.jpg";
@@ -27,7 +27,7 @@ export const timeline = [
   {
     id: 1,
     title: "Registration Begins",
-    data: "February 1",
+    data: "February 15",
     arrow: arrow_white,
     color: "white",
     bg_color: "black",
@@ -37,7 +37,7 @@ export const timeline = [
   {
     id: 2,
     title: "Registration Ends",
-    data: "March 1",
+    data: "April 15",
     arrow: arrow_black,
     color: "black",
     bg_color: "#F9BA04",
@@ -46,8 +46,8 @@ export const timeline = [
   },
   {
     id: 3,
-    title: "Top 16 Teams Announced",
-    data: "March 15 ",
+    title: "Top 10 Teams Announced",
+    data: "May 1 ",
     arrow: arrow_black,
     color: "black",
     bg_color: "#00A8FF",
@@ -57,7 +57,7 @@ export const timeline = [
   {
     id: 4,
     title: "BCC Demo Day",
-    data: "June 08",
+    data: "June 07",
     arrow: arrow_white,
     color: "white",
     bg_color: "#4C25EF",
